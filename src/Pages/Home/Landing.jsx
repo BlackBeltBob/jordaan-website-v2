@@ -254,7 +254,8 @@ const LandingPage = (props) => {
       {/* Section Mission Statement end */}
 
       {/* Section Start */}
-      <section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>
+      <section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" >
+      {/*<section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>*/}
         <Container>
           <Row className="justify-center">
             <Col lg={6} sm={8} className="text-center mb-24 md:mb-12 xs:mb-16">

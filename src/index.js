@@ -14,10 +14,11 @@ import "./Assets/css/pages.css"
 import "./index.scss"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const publicUrl = process.env.REACT_APP_PUBLIC_URL;
 root.render(
   <LazyMotion features={domMax}>
     <ParallaxProvider>
-      <BrowserRouter>
+      <BrowserRouter  basename={publicUrl}>
         <App />
       </BrowserRouter>
     </ParallaxProvider>
