@@ -187,14 +187,7 @@ export const LandingData = [
         subtitle: "Design, Photography, Freelancer",
         link: "/home-vertical-portfolio"
     },
-    {
-        category: ["BLOG"],
-        frontimg: "/assets/img/webp/litho-demo-lifestyle-blog.webp",
-        title: "Lifestyle Blog",
-        subtitle: "Fashion, Culture, Personal",
-        link: "/home-lifestyle-blog"
-    },
-    {
+      {
         category: ["PORTFOLIO"],
         frontimg: "/assets/img/webp/litho-demo-split-portfolio.webp",
         title: "Split Portfolio",

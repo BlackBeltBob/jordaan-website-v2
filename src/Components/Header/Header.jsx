@@ -18,7 +18,7 @@ import ReactCustomScrollbar from "../ReactCustomScrollbar";
 import GlobalContext from "../../Context/Context";
 
 // Data
-import HeaderData from "./HeaderData";
+import HeaderDataJordaan from "./HeaderDataJordaan";
 
 // css
 import "../../Assets/scss/layouts/_header.scss"
@@ -885,8 +885,8 @@ export const CollapsibleMenu = (props) => {
       className={`collapsible-menu${props.theme ? ` ${props.theme}` : ""}${props.className ? ` ${props.className}` : ""
         }`}
     >
-      {HeaderData &&
-        HeaderData.map((item, i) => {
+      {HeaderDataJordaan &&
+        HeaderDataJordaan.map((item, i) => {
           return (
             <Accordion.Item key={i} eventKey={i}>
               <Accordion.Header>
@@ -1055,12 +1055,12 @@ HamburgerMenu.propTypes = {
 };
 
 Menu.defaultProps = {
-  data: HeaderData,
+  data: HeaderDataJordaan,
 };
 
 MobileMenu.defaultProps = {
   type: "full",
-  data: HeaderData,
+  data: HeaderDataJordaan,
 };
 
 MobileMenu.propTypes = {
