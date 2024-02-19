@@ -49,7 +49,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "craco build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "craco build",
