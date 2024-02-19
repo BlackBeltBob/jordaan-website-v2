@@ -1,5 +1,5 @@
 Test to get github pages to work again...
 
-craco
+craco test
 
 [index.js](index.js)
