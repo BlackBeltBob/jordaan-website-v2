@@ -1,5 +1,5 @@
 Test to get github pages to work again...
 
-removed build from gitignore.
+craco
 
 [index.js](index.js)
