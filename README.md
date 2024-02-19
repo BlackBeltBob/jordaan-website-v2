@@ -1,5 +1,5 @@
 Test to get github pages to work again...
 
-nonprivate
+manual push.
 
 [index.js](index.js)
