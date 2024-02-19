@@ -80,7 +80,7 @@ function App() {
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
         {
           <main style={{ marginTop: headerHeight, marginBottom: footerHeight }}>
-            <ScrollToTopButton />
+            <ScrollToTopButton  />
             <AnimatePresence exitBeforeEnter>
               <Suspense fallback={<></>}>
                 <Routes>
