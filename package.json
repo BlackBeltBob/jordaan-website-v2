@@ -2,7 +2,7 @@
   "name": "jordaan-website-v2",
   "version": "1.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "blackbeltbob.github.io/jordaan-website-v2",
   "exports": "./index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
