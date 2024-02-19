@@ -1,8 +1,8 @@
 {
-  "name": "jordaan-website-v2",
+  "name": "litho",
   "version": "1.1.0",
   "private": true,
-  "homepage": "blackbeltbob.github.io/jordaan-website-v2/",
+  "homepage": "blackbeltbob.github.io/jordaan-website-v2",
   "exports": "./index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
