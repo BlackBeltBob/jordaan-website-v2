@@ -13,6 +13,7 @@ import ScrollToTopButton from "./Components/ScrollToTop"
 
 // Landing
 const LandingPage = lazy(() => import("./Pages/Home/Landing"))
+const AboutUsPage = lazy(() => import('./Pages/About/AboutUsPage'))
 const NotFoundPage = lazy(() => import("./Pages/404"))
 
 function App() {
@@ -85,7 +86,8 @@ function App() {
               <Suspense fallback={<></>}>
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
-                  <Route path="*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
+                  <Route path="/page/about-us" element={<AboutUsPage />} />
+                  <Route path="/*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
 
                   {/*/!* Elements *!/*/}
                   {/*<Route path="elements" element={<ElementPage style={{ "--base-color": "#0038e3" }} />} >*/}
