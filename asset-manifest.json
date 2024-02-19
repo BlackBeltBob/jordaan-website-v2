@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jordaan-website-v2/static/css/main.7996c099.css",
-    "main.js": "/jordaan-website-v2/static/js/main.313796d5.js",
+    "main.js": "/jordaan-website-v2/static/js/main.dc78f3e2.js",
     "static/css/371.1e9df291.chunk.css": "/jordaan-website-v2/static/css/371.1e9df291.chunk.css",
     "static/js/371.bb56c07f.chunk.js": "/jordaan-website-v2/static/js/371.bb56c07f.chunk.js",
     "static/js/400.fab79377.chunk.js": "/jordaan-website-v2/static/js/400.fab79377.chunk.js",
@@ -49,7 +49,7 @@
     "static/media/fa-v4compatibility.ttf": "/jordaan-website-v2/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
     "static/media/fa-v4compatibility.woff2": "/jordaan-website-v2/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "main.7996c099.css.map": "/jordaan-website-v2/static/css/main.7996c099.css.map",
-    "main.313796d5.js.map": "/jordaan-website-v2/static/js/main.313796d5.js.map",
+    "main.dc78f3e2.js.map": "/jordaan-website-v2/static/js/main.dc78f3e2.js.map",
     "371.1e9df291.chunk.css.map": "/jordaan-website-v2/static/css/371.1e9df291.chunk.css.map",
     "371.bb56c07f.chunk.js.map": "/jordaan-website-v2/static/js/371.bb56c07f.chunk.js.map",
     "400.fab79377.chunk.js.map": "/jordaan-website-v2/static/js/400.fab79377.chunk.js.map",
@@ -66,6 +66,6 @@
   },
   "entrypoints": [
     "static/css/main.7996c099.css",
-    "static/js/main.313796d5.js"
+    "static/js/main.dc78f3e2.js"
   ]
 }
