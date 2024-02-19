@@ -179,7 +179,7 @@ const SwiperImgData = [
 ]
 
 const textMissionStatement = 'Wij bieden hoogwaardige zorg, afgestemd op de individuele behoeften van elke cliënt.';
-const textVision = 'Met trots bieden wij een veelzijdigheid aan specialisaties en behandelingen aan om  een breed scala aan gezondheidsuitdagingen aan te pakken.';
+const textVision = 'Trots bieden wij een veelzijdigheid aan specialisaties en behandelingen aan om  een breed scala aan gezondheidsuitdagingen aan te pakken.';
 const textWelcomeHeader = "Oefentherapie Mensendieck & Fysiotherapie";
 const textWelcomeText = "Het team van Oefentherapie & Fysiotherapie Amsterdam is gepassioneerd over het menselijk lichaam en de kracht van de combinatie van oefentherapie en fysiotherapie. Door hun brede kennis van beide disciplines zijn ze in staat om de sterke punten van beide te combineren en te komen tot effectieve en efficiënte behandelplannen voor hun cliënten. Met een holistische benadering, gericht op het in kaart brengen van klachten in een bepaalde context, patronen inzichtelijk maken en het leggen van verbanden tussen mogelijk instandhoudende factoren, werkt het team samen met hun cliënten aan het verbeteren van hun welzijn en welbevinden. Wij streven naar het leveren van de best mogelijke zorg en investeren voortdurend in onze kennis en vaardigheden om onze cliënten optimale resultaten te kunnen bieden.";
 const textMissionLink = 'Lees meer over onze missie';
@@ -189,7 +189,7 @@ const textTestimonalsText = 'Wat onze clienten over onze service zeggen';
 // Filter the blog data category wise
 const blogModernData = blogData.filter((item) => item.blogType === "modern");
 
-const SpaSalonPage = (props) => {
+const LandingPage = (props) => {
   const swiperRef = React.useRef(null)
   const swiperpakage = React.useRef(null)
   const swiperReff = React.useRef(null)
@@ -221,16 +221,16 @@ const SpaSalonPage = (props) => {
 
 
       {/* Section Mission Statement start */}
-      <section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundColor: '#fd0' }}>
+      <section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundColor: '#fede4f' }}>
         <Container>
           <Row className="mt-32 md:mt-24" style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
               <img style={{height: "160px", width: "100px", flex: 0}} src="/assets/img/ruggengraat.png" />
               <div id="logo" style={{flex: 1}}>
-                <h5 style={{fontFamily: "Turnpike", fontSize: "58px", margin: 0, paddingTop: "32px"}}>Jordaan</h5>
-                <h5 style={{fontFamily: "Aller", fontSize: "33.3px"}}>Mensendieck &amp; Fysiotherapie</h5>
+                <h5 className='text-nowrap text-[#333045]' style={{overflowWrap: 'no-wrap', fontFamily: "Turnpike", fontSize: "58px", margin: 0, paddingTop: "32px"}}>Jordaan</h5>
+                <h5 className='text-nowrap text-[#333045]' style={{fontFamily: "Aller", fontSize: "33.3px"}}>Mensendieck &amp; Fysiotherapie</h5>
               </div>
               <address style={{flex: 1, fontFamily: "Aller"}}>
-                <p>Westerstraat 238<br />
+                <p className='text-nowrap text-[#333045]'>Westerstraat 238<br />
                   1015 MT, Amsterdam<br />
                   020 - 623 5136<br />
                   info@mensendieck-fysiotherapie.nl</p>
@@ -243,8 +243,8 @@ const SpaSalonPage = (props) => {
               </h2>
             </m.div>
             <m.div {...{ ...fadeIn, transition: { delay: 0.6 } }} className="col-12 col-lg-5 offset-lg-1 col-md-6">
-              <p className="leading-[32px] w-[95%] mb-[25px]">
-                {textVision}
+              <p className="leading-[32px] w-[95%] mb-[25px] text-[#333045]">
+                <i>{textVision}</i>
               </p>
               <Buttons ariaLabel={textMissionLink} href="#" className="font-semibold font-serif uppercase btn-link after:h-[1px] md:text-md md:mb-[15px] after:bg-[#333045] hover:text-darkgray" size="xlg" color="#333045" title={textMissionLink} />
             </m.div>
@@ -578,4 +578,4 @@ const SpaSalonPage = (props) => {
   )
 }
 
-export default SpaSalonPage
+export default LandingPage
