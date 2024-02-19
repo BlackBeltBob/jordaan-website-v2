@@ -1,5 +1,5 @@
 Test to get github pages to work again...
 
-craco test
+nonprivate
 
 [index.js](index.js)
