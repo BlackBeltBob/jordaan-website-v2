@@ -2,8 +2,7 @@
   "name": "litho",
   "version": "1.1.0",
   "private": true,
-  "homepage": ".",
-  "PUBLIC_URL": "blackbeltbob.github.io/jordaan-website-v2",
+  "homepage": "blackbeltbob.github.io/jordaan-website-v2",
   "exports": "./index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,7 +18,7 @@
     "framer-motion": "^6.5.1",
     "gh-pages": "^6.1.0",
     "isotope-layout": "^3.0.6",
-    "nodemailer": "^6.9.1",
+    "nodemailer": "6.9.9",
     "npm-run-all": "^4.1.5",
     "prop-types": "^15.8.1",
     "querystring": "^0.2.1",
