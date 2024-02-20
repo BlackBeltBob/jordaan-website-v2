@@ -31,6 +31,7 @@ function App() {
     window.addEventListener('load', retina(document.querySelectorAll('img')));
   }, [])
 
+
   useEffect(() => {
     setTimeout(() => {
       import("./Functions/Utilities").then(module => {

@@ -32,29 +32,29 @@ const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithTe
 
 const RotateBoxData = [
   {
-    img: "https://via.placeholder.com/800x1067",
-    title: "Ayurvedic",
-    subtitle: "Starting from $50",
+    img: `assets/img/webp/pakketten/rugklachten.webp`,
+    title: "Rugklachten",
+    subtitle: "Holistische benadering | 5 behandelingen",
     icon: "line-icon-Environmental-3",
-    btnLink: "#",
-    btnTitle: "Discover more",
-    content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
+    btnLink: "/page/pakket-rugklachten",
+    btnTitle: "Lees meer",
+    content: "Houding- en bewegingsadvies ter genezing en preventie van rugklachten"
   },
   {
-    img: "https://via.placeholder.com/800x1067",
-    title: "Fairness",
-    subtitle: "Starting from $90",
+    img: "assets/img/webp/pakketten/nekklachten.webp",
+    title: "Nekklachten",
+    subtitle: "Holistische benadering | 6 behandelingen",
     icon: "line-icon-Crown",
-    btnLink: "#",
+    btnLink: "/page/pakket-nekklachten",
     btnTitle: "Discover more",
     content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
   },
   {
-    img: "https://via.placeholder.com/800x1067",
-    title: "Herbal",
-    subtitle: "Starting from $75",
+    img: "assets/img/webp/pakketten/slaaptraining.webp",
+    title: "Slaaptraining",
+    subtitle: "4 behandelingen | online training",
     icon: "line-icon-Daylight",
-    btnLink: "#",
+    btnLink: "/page/pakket-slaaptraining",
     btnTitle: "Discover more",
     content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
   }
@@ -204,9 +204,9 @@ const LandingPage = (props) => {
           <Col className="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0 md:!px-0">
             <Link aria-label="header logo" className="flex items-center" to="/">
               <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-white.webp' data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-gradient-tan-geraldine.webp' data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-gradient-tan-geraldine.webp' data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo' />
+                <img className="default-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-white.webp`} data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
+                <img className="alt-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-gradient-tan-geraldine.webp`} data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo' />
+                <img className="mobile-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-gradient-tan-geraldine.webp`} data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo' />
               </Navbar.Brand>
             </Link>
           </Col>
@@ -224,7 +224,8 @@ const LandingPage = (props) => {
       <section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundColor: '#fede4f' }}>
         <Container>
           <Row className="mt-32 md:mt-24" style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
-              <img style={{height: "160px", width: "100px", flex: 0}} src="/assets/img/ruggengraat.png" />
+            {/*<img style={{height: "160px", width: "100px", flex: 0}} src="/assets/img/ruggengraat.png" />*/}
+            <img style={{height: "160px", width: "100px", flex: 0}} src={`${process.env.PUBLIC_URL}/assets/img/ruggengraat.png`} />
               <div id="logo" style={{flex: 1}}>
                 <h5 className='text-nowrap text-[#333045]' style={{overflowWrap: 'no-wrap', fontFamily: "Turnpike", fontSize: "58px", margin: 0, paddingTop: "32px"}}>Jordaan</h5>
                 <h5 className='text-nowrap text-[#333045]' style={{fontFamily: "Aller", fontSize: "33.3px"}}>Mensendieck &amp; Fysiotherapie</h5>

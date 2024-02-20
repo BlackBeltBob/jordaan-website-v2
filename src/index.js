@@ -14,7 +14,10 @@ import "./Assets/css/pages.css"
 import "./index.scss"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const publicUrl = process.env.REACT_APP_PUBLIC_URL;
+const publicUrl = process.env.PUBLIC_URL;
+console.log('PUBLIC_URL: ', process.env.PUBLIC_URL);
+
+
 root.render(
   <LazyMotion features={domMax}>
     <ParallaxProvider>

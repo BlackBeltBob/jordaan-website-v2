@@ -2,7 +2,6 @@
   "name": "litho",
   "version": "1.1.0",
   "private": true,
-  "homepage": "http://localhost:3000/",
   "exports": "./index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -51,8 +50,8 @@
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "craco build",
+    "start": "PUBLIC_URL=http://localhost:3000/jordaan-website-v2 react-scripts start",
+    "build": "PUBLIC_URL=/jordaan-website-v2 craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "run-p sass tailwind pages",
