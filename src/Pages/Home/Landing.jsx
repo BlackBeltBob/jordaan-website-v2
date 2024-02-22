@@ -47,7 +47,7 @@ const RotateBoxData = [
     icon: "line-icon-Crown",
     btnLink: "/page/pakket-nekklachten",
     btnTitle: "Lees meer",
-    content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
+    content: "Integrale, holistische aanpak van een veel voorkomende klacht."
   },
   {
     img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/slaaptraining.webp`,
@@ -56,7 +56,7 @@ const RotateBoxData = [
     icon: "line-icon-Daylight",
     btnLink: "/page/pakket-slaaptraining",
     btnTitle: "Lees meer",
-    content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
+    content: "Heeft u moeite om in slaap te vallen? Ook slapen kun je leren!"
   }
 ]
 
@@ -109,23 +109,23 @@ const ClientData = [
 const IconWithTextData = [
   {
     icon: "line-icon-Slippers text-[40px] text-[#f18c8c] mb-[30px]",
-    title: "MANICURE PEDICURE",
-    content: "Lorem ipsum is simply dummy text the printing typesetting",
+    title: "GERIATRIE OEFENTHERAPIE",
+    content: "Oefentherapie ",
   },
   {
     icon: "line-icon-Teapot text-[40px] text-[#f18c8c] mb-[30px]",
-    title: "OIL MASSAGE",
-    content: "Lorem ipsum is simply dummy text the printing typesetting",
+    title: "ONDERSTEUNING OP AFSTAND",
+    content: "Bij ons kunt u ook met een e-consult terecht.",
   },
   {
     icon: "line-icon-ICQ text-[40px] text-[#f18c8c] mb-[30px]",
-    title: "LUXURY SPA",
-    content: "Lorem ipsum is simply dummy text the printing typesetting",
+    title: "HARTJE JORDAAN",
+    content: "Onze praktijk ligt in een hofje in het bruisende centrum van de jordaan",
   },
   {
     icon: "line-icon-Leafs text-[40px] text-[#f18c8c] mb-[30px]",
-    title: "SKIN THERAPY",
-    content: "Lorem ipsum is simply dummy text the printing typesetting",
+    title: "OEFENTHERAPIE & FYSIOTHERAPIE",
+    content: "Een krachtige combinatie van disciplines",
   },
 ]
 
@@ -178,11 +178,11 @@ const SwiperImgData = [
   },
 ]
 
-const textMissionStatement = 'Wij bieden hoogwaardige zorg, afgestemd op de individuele behoeften van elke cliënt.';
-const textVision = 'Trots bieden wij een veelzijdigheid aan specialisaties en behandelingen aan om  een breed scala aan gezondheidsuitdagingen aan te pakken.';
+const textMissionStatement = 'Ontdek wat onze holistische aanpak voor jou kan betekenen';
+const textVision = 'Onze praktijk kenmerkt zich door de holistische benadering: combineert veel verschillende specialisaties, zodat je een effectieve en efficiënte behandeling krijgt.';
 const textWelcomeHeader = "Oefentherapie Mensendieck & Fysiotherapie";
 const textWelcomeText = "Het team van Oefentherapie & Fysiotherapie Amsterdam is gepassioneerd over het menselijk lichaam en de kracht van de combinatie van oefentherapie en fysiotherapie. Door hun brede kennis van beide disciplines zijn ze in staat om de sterke punten van beide te combineren en te komen tot effectieve en efficiënte behandelplannen voor hun cliënten. Met een holistische benadering, gericht op het in kaart brengen van klachten in een bepaalde context, patronen inzichtelijk maken en het leggen van verbanden tussen mogelijk instandhoudende factoren, werkt het team samen met hun cliënten aan het verbeteren van hun welzijn en welbevinden. Wij streven naar het leveren van de best mogelijke zorg en investeren voortdurend in onze kennis en vaardigheden om onze cliënten optimale resultaten te kunnen bieden.";
-const textMissionLink = 'Lees meer over onze missie';
+const textMissionLink = 'Lees meer over onze visie';
 const textTestimonalsHeader = 'Testimonials';
 const textTestimonalsText = 'Wat onze clienten over onze service zeggen';
 
@@ -233,14 +233,14 @@ const LandingPage = (props) => {
           <Col className="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0 md:!px-0">
             <Link aria-label="header logo" className="flex items-center" to="/">
               <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-white.webp`}
+                <img className="default-logo" width="163" height="36" loading="lazy"
+                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-yellow-top.png`}
                      data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo'/>
-                <img className="alt-logo" width="111" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-gradient-tan-geraldine.webp`}
+                <img className="alt-logo" width="163" height="36" loading="lazy"
+                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
                      data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
-                <img className="mobile-logo" width="111" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-gradient-tan-geraldine.webp`}
+                <img className="mobile-logo" width="163" height="36" loading="lazy"
+                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
                      data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
               </Navbar.Brand>
             </Link>
@@ -266,7 +266,7 @@ const LandingPage = (props) => {
           <Row className="mt-32 md:mt-24">
             <m.div {...fadeIn} className="col-12 col-md-6">
               <h2
-                className="heading-5 font-serif font-medium leading-[46px] -tracking-[1px] w-[95%] text-[#333045] m-md-0 lg:w-full sm:leading-[32px]">
+                className="heading-5 font-serif font-medium leading-[46px] -tracking-[1px] w-[95%] text-jordaanText m-md-0 lg:w-full sm:leading-[32px]">
                 {textMissionStatement}
               </h2>
             </m.div>
@@ -274,7 +274,7 @@ const LandingPage = (props) => {
               <p className="leading-[32px] w-[95%] mb-[25px] text-[#333045]">
                 <i>{textVision}</i>
               </p>
-              <Buttons ariaLabel={textMissionLink} href="#"
+              <Buttons ariaLabel={textMissionLink} href={`${process.env.PUBLIC_URL}/page/mission-statement`}
                        className="font-semibold font-serif uppercase btn-link after:h-[1px] md:text-md md:mb-[15px] after:bg-[#333045] hover:text-darkgray"
                        size="xlg" color="#333045" title={textMissionLink}/>
             </m.div>

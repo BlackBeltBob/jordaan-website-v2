@@ -42,7 +42,10 @@ module.exports = {
         coolgray: '#d6d5d5',
         neonorange: '#ff7a56',
         slateblue: '#8890a4',
-        error: 'red'
+        error: 'red',
+
+        jordaanYellow: '#fede4f',
+        jordaanText: '#333045',
       }
     },
   },
