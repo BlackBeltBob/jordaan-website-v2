@@ -39,3 +39,26 @@
 @import "./components/tab";
 @import "./components/testimonialcarousel";
 @import "./components/textslider";
+
+
+
+/*    Fonts     */
+@font-face {
+  font-family: "Aller";
+  src: url("../fonts/Aller_Rg.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Aller_Rg.woff") format("woff");
+}
+@font-face {
+  font-family: "Aller Bold";
+  src: url("../fonts/Aller_Bd.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Aller_Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/Aller_Bd.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Turnpike";
+  src: url("../fonts/Turnpike.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Turnpike.eot?#iefix") format("embedded-opentype"), url("../fonts/Turnpike.woff") format("woff");
+}

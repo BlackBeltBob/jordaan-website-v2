@@ -2,24 +2,3 @@
 @tailwind utilities;
 
 
-
-/*    Fonts     */
-@font-face {
-  font-family: "Aller";
-  src: url("assets/fonts/Aller_Rg.eot");
-  /* IE9 Compat Modes */
-  src: url("assets/fonts/Aller_Rg.woff") format("woff");
-}
-@font-face {
-  font-family: "Aller Bold";
-  src: url("assets/fonts/Aller_Bd.eot");
-  /* IE9 Compat Modes */
-  src: url("assets/fonts/Aller_Bd.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Aller_Bd.woff") format("woff");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Turnpike";
-  src: url("assets/fonts/Turnpike.eot");
-  /* IE9 Compat Modes */
-  src: url("assets/fonts/Turnpike.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Turnpike.woff") format("woff");
-}
