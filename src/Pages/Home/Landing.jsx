@@ -46,7 +46,7 @@ const RotateBoxData = [
     subtitle: "Holistische benadering | 6 behandelingen",
     icon: "line-icon-Crown",
     btnLink: "/page/pakket-nekklachten",
-    btnTitle: "Discover more",
+    btnTitle: "Lees meer",
     content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
   },
   {
@@ -55,7 +55,7 @@ const RotateBoxData = [
     subtitle: "4 behandelingen | online training",
     icon: "line-icon-Daylight",
     btnLink: "/page/pakket-slaaptraining",
-    btnTitle: "Discover more",
+    btnTitle: "Lees meer",
     content: "Lorem ipsum dolor sit amet consectetur do eiusmod tempor incididunt labore ut enim"
   }
 ]
