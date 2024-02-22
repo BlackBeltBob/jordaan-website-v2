@@ -37,7 +37,7 @@ const RotateBox = (props) => {
                                                 </div>
                                             </div>
                                             <div className="card-side back rounded-[4px] overflow-hidden">
-                                                <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-[#fb7f87] via-[#fc8a82] to-[#f7aa80]"></div>
+                                                <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-[#fec000] via-[#fec000] to-[#fe7a00]"></div>
                                                 <div className="content-wrap p-[60px] lg:px-[30px] md:px-[40px] xs:p-[30px]">
                                                     <i className={`${item.icon} text-[50px] text-white mb-[35px] inline-block`}></i>
                                                     <span className="text-white text-xmd tracking-[1px] font-medium uppercase font-serif block mb-[10px]">{item.title}</span>
