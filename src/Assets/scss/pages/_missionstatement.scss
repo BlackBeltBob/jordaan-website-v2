@@ -1,0 +1,44 @@
+.mission-statement-bg-gradient {
+    color: #fff;
+    background-size: 200% auto;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+        background-position: right center;
+    }
+}
+
+.icon-with-text-02 {
+    &.mission-statement-icon-with-text {
+        > div {
+            position: relative;
+            &::after {
+                content: "";
+                transition-duration: 0.4s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0;
+            }
+            i {
+                @apply bg-gradient-to-r from-[#0038e3] via-[#0038e3] to-[#0038e3];
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+                i {
+                    @apply bg-gradient-to-r from-[#fff] via-[#fff] to-[#fff];
+                }
+                .feature-box-content {
+                    span,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
