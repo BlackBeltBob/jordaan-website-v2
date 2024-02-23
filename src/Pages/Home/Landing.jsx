@@ -244,7 +244,7 @@ const LandingPage = (props) => {
                 {textMissionStatement}
               </h2>
             </m.div>
-            <m.div {...{...fadeIn, transition: {delay: 0.6}}} className="col-12 col-lg-5 offset-lg-1 col-md-6">
+            <m.div {...{...fadeIn, transition: {delay: 0.6}}} className="col-12 col-lg-5 col-md-6">
               <p className="leading-[32px] w-[95%] mb-[25px] text-[#333045]">
                 <i>{textVision}</i>
               </p>
