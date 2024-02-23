@@ -1,20 +1,20 @@
-import React, { lazy, useState } from 'react'
+import React, {lazy, useState} from 'react'
 
 // Libraries
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Keyboard, Pagination } from "swiper";
-import { Col, Container, Navbar, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { AnimatePresence, m } from 'framer-motion'
-import { Formik, Form } from 'formik';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Autoplay, Pagination} from "swiper";
+import {Col, Container, Navbar, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {AnimatePresence, m} from 'framer-motion'
+import {Form, Formik} from 'formik';
 
 // Components
 import Buttons from '../../Components/Button/Buttons'
-import { Header, HeaderNav, Menu, MobileMenu, SearchBar, } from "../../Components/Header/Header";
+import {Header, HeaderNav, Menu, MobileMenu, SearchBar,} from "../../Components/Header/Header";
 import Overlap from '../../Components/Overlap/Overlap';
 import CustomModal from '../../Components/CustomModal'
-import { Input } from '../../Components/Form/Form'
-import { ContactFormStyle02Schema } from '../../Components/Form/FormSchema';
+import {Input} from '../../Components/Form/Form'
+import {ContactFormStyle02Schema} from '../../Components/Form/FormSchema';
 import MessageBox from '../../Components/MessageBox/MessageBox';
 import Clients from '../../Components/Clients/Clients';
 import TestimonialsCarousel05 from "../../Components/TestimonialCarousel/TestimonialsCarousel05";
@@ -22,11 +22,12 @@ import BlogModern from '../../Components/Blogs/BlogModern';
 import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import RotateBox from '../../Components/RotateBox/RotateBox';
 import SideButtons from "../../Components/SideButtons";
-import { fadeIn, fadeInLeft, zoomIn } from '../../Functions/GlobalAnimations';
-import { addZeroBeforeNumber, resetForm, sendEmail } from "../../Functions/Utilities";
+import {fadeIn, fadeInLeft, zoomIn} from '../../Functions/GlobalAnimations';
+import {resetForm, sendEmail} from "../../Functions/Utilities";
 
 // Data
-import { blogData } from '../../Components/Blogs/BlogData';
+import {blogData} from '../../Components/Blogs/BlogData';
+import {JordaanHeader} from "../../Components/Jordaan/JordaanHeader";
 
 const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
@@ -189,33 +190,6 @@ const textTestimonalsText = 'Wat onze clienten over onze service zeggen';
 // Filter the blog data category wise
 const blogModernData = blogData.filter((item) => item.blogType === "modern");
 
-class JordaanHeader extends React.Component {
-  render() {
-    return <Container style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
-      {/*<img style={{height: "160px", width: "100px", flex: 0}} src="/assets/img/ruggengraat.png" />*/}
-      <img style={{height: "160px", width: "100px", flex: 0}}
-           src={`${process.env.PUBLIC_URL}/assets/img/ruggengraat.png`}/>
-      <div id="logo" style={{flex: 1}}>
-        <h5 className="text-nowrap text-[#333045]" style={{
-          overflowWrap: "no-wrap",
-          fontFamily: "Turnpike",
-          fontSize: "58px",
-          margin: 0,
-          paddingTop: "32px"
-        }}>Jordaan</h5>
-        <h5 className="text-nowrap text-[#333045]"
-            style={{fontFamily: "Aller", fontSize: "33.3px"}}>Mensendieck &amp; Fysiotherapie</h5>
-      </div>
-      <address style={{flex: 1, fontFamily: "Aller"}}>
-        <p className="text-nowrap text-[#333045]">Westerstraat 238<br/>
-          1015 MT, Amsterdam<br/>
-          020 - 623 5136<br/>
-          info@mensendieck-fysiotherapie.nl</p>
-      </address>
-    </Container>;
-  }
-}
-
 const LandingPage = (props) => {
   const swiperRef = React.useRef(null)
   const swiperpakage = React.useRef(null)
@@ -261,7 +235,7 @@ const LandingPage = (props) => {
         style={{backgroundColor: '#fede4f'}}>
         <Container>
           <Row className="mt-32 md:mt-24">
-            <JordaanHeader className="mt-32 md:mt-24"/>
+            <JordaanHeader className="mt-32 md:mt-24 row"/>
           </Row>
           <Row className="mt-32 md:mt-24">
             <m.div {...fadeIn} className="col-12 col-md-6">
