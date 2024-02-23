@@ -11,8 +11,9 @@ module.exports = {
       'mxl': { 'raw': '(min-width: 1921px)' },
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
+      sans: ['Aller', 'Roboto', 'sans-serif'],
       serif: ['Poppins', 'sans-serif'],
+      turnpike: ['Turnpike'],
     },
     fontSize: {
       base: ['15px', '30px'],
@@ -23,7 +24,11 @@ module.exports = {
       xmd: ['16px', '28px'],
       lg: ['18px', '22px'],
       xlg: ['20px', '28px'],
-      xbig: ['230px', '200px']
+      xxlg: ['23.2px', '28px'],
+      xbig: ['230px', '200px'],
+      stupidmd: ['34px', '40px'],
+      stupidlg: ['40px', '50px'],
+      stupidbig: ['55px', '60px'],
     },
     extend: {
       textUnderlineOffset: {
