@@ -16,6 +16,7 @@ import CustomModal from '../../Components/CustomModal'
 import {Input} from '../../Components/Form/Form'
 import {ContactFormStyle02Schema} from '../../Components/Form/FormSchema';
 import MessageBox from '../../Components/MessageBox/MessageBox';
+import Clients from '../../Components/Clients/Clients';
 import TestimonialsCarousel05 from "../../Components/TestimonialCarousel/TestimonialsCarousel05";
 import BlogModern from '../../Components/Blogs/BlogModern';
 import FooterStyle01 from '../../Components/Footers/FooterStyle01';
@@ -27,7 +28,6 @@ import {resetForm, sendEmail} from "../../Functions/Utilities";
 // Data
 import {blogData} from '../../Components/Blogs/BlogData';
 import {JordaanHeader} from "../../Components/Jordaan/JordaanHeader";
-import {JordaanContactForm} from "../../Components/Jordaan/JordaanContactForm";
 
 const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
@@ -217,7 +217,7 @@ const textGeriatricLink = 'Lees meer';
 // Filter the blog data category wise
 const blogModernData = blogData.filter((item) => item.blogType === "modern");
 
-const LandingPage = (props) => {
+const RugklachtenPage = (props) => {
   const swiperRef = React.useRef(null)
   const swiperpakage = React.useRef(null)
   const swiperReff = React.useRef(null)
@@ -235,14 +235,14 @@ const LandingPage = (props) => {
             <Link aria-label="header logo" className="flex items-center" to="/">
               <Navbar.Brand className="inline-block p-0 m-0">
                 <img className="default-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-yellow-top.png`}
+                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
                      data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo'/>
                 <img className="alt-logo" width="163" height="36" loading="lazy"
                      src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
+                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
                 <img className="mobile-logo" width="163" height="36" loading="lazy"
                      src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
+                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
               </Navbar.Brand>
             </Link>
           </Col>
@@ -256,69 +256,35 @@ const LandingPage = (props) => {
       {/* Header End */}
 
 
-      {/* Section Mission Statement start */}
-      <section
-        className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]"
-        style={{backgroundColor: '#fede4f'}}>
-        <Container>
-          <Row className="mt-32 md:mt-24">
-            <JordaanHeader className="mt-32 md:mt-24 row"/>
-          </Row>
-          <Row className="mt-32 md:mt-24">
-            <m.div {...fadeIn} className="col-12 col-md-6">
-              <h2
-                className="heading-5 font-serif font-medium leading-[46px] -tracking-[1px] w-[95%] text-jordaanText m-md-0 lg:w-full sm:leading-[32px]">
-                {textMissionStatement}
-              </h2>
-            </m.div>
-            <m.div {...{...fadeIn, transition: {delay: 0.6}}} className="col-12 col-lg-5 col-md-6">
-              <p className="leading-[32px] w-[95%] mb-[25px] text-[#333045]">
-                <i>{textVision}</i>
-              </p>
-              <Buttons ariaLabel={textMissionLink} href={`${process.env.PUBLIC_URL}/page/mission-statement`}
-                       className="font-semibold font-serif uppercase btn-link after:h-[1px] md:text-md md:mb-[15px] after:bg-[#333045] hover:text-darkgray"
-                       size="xlg" color="#333045" title={textMissionLink}/>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section Mission Statement end */}
 
       {/* Section Start */}
       <section
-        className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
+        className="pt-[350px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
         {/*<section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>*/}
         <Container>
           <Row className="justify-center">
             <Col lg={7} sm={8} className="text-center mb-26 md:mb-12 xs:mb-16">
-              <m.span className="block mb-[40px] md:mb-[25px] xs:mb-[15px]" {...fadeIn}><img width={150} height={78}
-                                                                                             src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                                                                                             className="my-0 mx-auto"
-                                                                                             alt="spa"
-                                                                                             data-no-retina=""/>
-              </m.span>
-              <m.span className="inline-block font-serif text-spanishgray uppercase font-medium mb-[15px] tracking-[1px] xs:mb-[10px]">
+              <m.span className="inline-block font-serif text-jordaanText uppercase font-medium mb-[15px] tracking-[1px] xs:mb-[10px]">
                 {textMotto}
               </m.span>
-              <m.h2 className="heading-5 font-serif text-darkgray font-medium tracking-[-1px]">
+              <m.h2 className="heading-5 font-serif text-jordaanText font-medium tracking-[-1px]">
                 {textMottoExt}
               </m.h2>
             </Col>
           </Row>
-          <IconWithText grid="row-cols-1 row-cols-lg-4 row-cols-sm-2 text-center" theme="icon-with-text-03"
-                        data={IconWithTextData} animation={fadeIn} animationDelay={0.3}/>
+          {/*<IconWithText grid="row-cols-1 row-cols-lg-4 row-cols-sm-2 text-center" theme="icon-with-text-03"*/}
+          {/*              data={IconWithTextData} animation={fadeIn} animationDelay={0.3}/>*/}
         </Container>
       </section>
       {/* Section End */}
 
-      {/* Section RotateBox/Pakketten Start */}
       <section className="pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] bg-jordaanYellow bg-cover bg-no-repeat relative bg-center">
                {/*style={{backgroundImage: 'url(https://via.placeholder.com/1920x625)'}}>*/}
         <Container>
           <Row className="justify-center">
             <Overlap className="col-12 col-md-12 col-sm-8 md:mt-[75px]">
-              <RotateBox grid="row-cols-1 row-cols-md-2 row-cols-lg-3 gap-y-10 justify-center" animation={fadeIn}
-                         animationDelay={0.2} data={RotateBoxData}/>
+              {/*<RotateBox grid="row-cols-1 row-cols-md-2 row-cols-lg-3 gap-y-10 justify-center" animation={fadeIn}*/}
+              {/*           animationDelay={0.2} data={RotateBoxData}/>*/}
             </Overlap>
           </Row>
         </Container>
@@ -380,12 +346,156 @@ const LandingPage = (props) => {
       </section>
       {/* Section End */}
 
-
-      <section className="relative py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#f7edee] overflow-hidden">
-        <JordaanContactForm />
+      {/* Section Start */}
+      <section
+        className="relative py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#f7edee] overflow-hidden">
+        <div
+          className="text-overlap absolute tracking-[-3px] left-[-115px] top-0 text-[255px] leading-[255px] h-full text-center w-auto font-semibold font-serif text-white block md:hidden">relax
+        </div>
+        <Container>
+          <Row>
+            <m.div
+              className="relative md:mb-16 justify-center items-start flex flex-col col-xl-4 col-lg-4 col-md-8" {...fadeIn}>
+              <span
+                className="font-serif font-medium text-gradient bg-gradient-to-r from-[#ec606c] to-[#eb7242] uppercase mb-[15px] inline-block sm:mb-[5px]">Luxury packages</span>
+              <h2 className="heading-5 font-serif font-medium text-darkgray">Our spa massage therapy packages</h2>
+              <p className="w-[85%] mb-[35px] lg:w-full">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.</p>
+              <div className="flex">
+                <div onClick={() => swiperpakage.current.swiper.slidePrev()}
+                     className="btn-slider-next rounded-full flex justify-center items-center shadow-[0_0_10px_rgba(0,0,0,0.07)] text-black bg-white right-inherit h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-default">
+                  <button aria-label="link for swiper next" className="text-xmd flex"><i
+                    className="feather-arrow-left"></i></button>
+                </div>
+                <div onClick={() => swiperpakage.current.swiper.slideNext()}
+                     className="btn-slider-prev text-black shadow-[0_0_10px_rgba(0,0,0,0.07)] bg-white rounded-full flex justify-center items-center right-inherit h-[40px] w-[40px] ml-[10px] cursor-pointer hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-default">
+                  <button aria-label="link for swiper prev" className="text-xmd flex"><i
+                    className="feather-arrow-right"></i></button>
+                </div>
+              </div>
+            </m.div>
+            <m.div className="col-lg-7 offset-xs-1 will-change-transform">
+              <m.div {...{...fadeInLeft, transition: {duration: 0.6, ease: "linear"}}}>
+                <Swiper
+                  className="interactivebanners-style-02 w-full h-full min-w-[1170px] md:min-w-full md:mr-0 white-move"
+                  modules={[Autoplay, Pagination]}
+                  loop={true}
+                  slidesPerView={1}
+                  spaceBetween={40}
+                  observer={true}
+                  observeParents={true}
+                  keyboard={{
+                    enabled: "true",
+                    onlyInViewport: "true"
+                  }}
+                  breakpoints={{
+                    992: {slidesPerView: "3"},
+                    768: {slidesPerView: "2"},
+                  }}
+                  effect={'slide'}
+                  ref={swiperpakage}
+                >
+                  {
+                    InteractiveBannersData01.map((item, i) => {
+                      return (
+                        <SwiperSlide key={i} className="my-swiper">
+                          <m.div className="interactivebanners-main overflow-hidden rounded-[6px]" {...{
+                            ...props.animation,
+                            transition: {delay: ((i / 2) * 0.36) * props.animationDelay}
+                          }}>
+                            <div className="relative">
+                              {item.img &&
+                                <img width="412px" height="524px" className="interactiveanners-img" src={item.img}
+                                     alt="spa"/>}
+                              <div
+                                className="absolute h-full w-full opacity-100 top-0 left-0 bg-gradient-to-b from-transparent to-[#141414]"></div>
+                            </div>
+                            <div className="fancy-text-content px-[55px] xs:px-[30px] xxs:px-[30px]">
+                              {item.subtitle && <span
+                                className="interactivebanners-subtitle font-medium bg-gradient-to-tr from-[#fd7f87] to-[#f7aa80] inline-block px-[15px] py-[5px] mb-[20px] rounded-[2px] text-white text-xs font-serif uppercase">{item.subtitle}</span>}
+                              {item.title && <div
+                                className="interactivebanners-title mb-[10px] text-white text-xlg font-serif lg:text-[18px] w-100">{item.title}</div>}
+                              {item.btnTitle &&
+                                <Buttons ariaLabel="link for swiper" to={item.btnLink} title={item.btnTitle}
+                                         className="btn-fill btn-fancy rounded-[3px] mt-[15px] font-medium font-serif uppercase md:mb-[15px]"
+                                         themeColor="#fff" color="#232323" size="xs"/>}
+                            </div>
+                          </m.div>
+                        </SwiperSlide>
+                      )
+                    })
+                  }
+                </Swiper>
+              </m.div>
+            </m.div>
+          </Row>
+        </Container>
       </section>
+      {/* Section End */}
 
 
+      {/* Section Start */}
+      <section className="pb-[130px] lg:pb-[90px] md:pb-[75px] sm:py-[50px]">
+        <Container>
+          <Row className="justify-center xs:mx-0 gx-0">
+            <Overlap value={70}>
+              <Col xl={10} lg={11}
+                   className="col-12 relative bg-white rounded-[6px] shadow-[0_0_20px_rgba(0,0,0,0.1)] mx-auto overflow-hidden">
+                <m.div className="row" {...fadeIn}>
+                  <Col md={6} className="col-12 bg-no-repeat bg-cover overflow-hidden relative bg-center sm:h-[350px]"
+                       style={{backgroundImage: "url(https://via.placeholder.com/800x838)"}}></Col>
+                  <Col md={6} className="col-12 p-24 xs:p-14 md:p-10">
+                    <h2
+                      className="heading-5 font-serif font-bold text-[#262b35] uppercase tracking-[-1px] w-[90%] mb-[20px]">GET
+                      BOOK YOUR SPA APPOINTMENT</h2>
+                    <p className="w-[90%] lg:w-full mb-[35px]">Lorem ipsum is simply dummy text of the printing and
+                      typesetting industry</p>
+                    <Formik
+                      initialValues={{name: "", email: ""}}
+                      validationSchema={ContactFormStyle02Schema}
+                      onSubmit={async (values, actions) => {
+                        actions.setSubmitting(true)
+                        const response = await sendEmail(values)
+                        response.status === "success" && resetForm(actions)
+                      }}
+                    >
+                      {({isSubmitting, status}) => (
+                        <Form>
+                          <Input showErrorMsg={false} type="text" name="name" labelclass="mb-[25px]"
+                                 className="rounded-[5px] py-[15px] px-[20px] w-full bg-lightgray mb-[20px] border-[1px] border-transparent"
+                                 placeholder="Your name"/>
+                          <Input showErrorMsg={false} type="email" name="email" labelclass="mb-[30px]"
+                                 className="rounded-[5px] py-[15px] px-[20px] w-full bg-lightgray mb-[15px] border-[1px] border-transparent"
+                                 placeholder="Your email address"/>
+                          <Buttons ariaLabel="link for subscribe" type="submit"
+                                   className={`text-sm leading-none font-medium rounded-[4px] w-full uppercase${isSubmitting ? " loading" : ""}`}
+                                   themeColor={["#fd7f87", "#f7aa80"]} color="#fff" size="lg" title="Get started now"/>
+                          <AnimatePresence>
+                            {status && (
+                              <m.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+                                <MessageBox className="mt-[20px] relative py-[13px] px-[20px] text-md leading-[22px]"
+                                            theme="message-box01" variant="success"
+                                            message="Your message has been sent successfully subscribed to our email list!"/>
+                              </m.div>
+                            )}
+                          </AnimatePresence>
+                        </Form>
+                      )}
+                    </Formik>
+                  </Col>
+                </m.div>
+              </Col>
+            </Overlap>
+          </Row>
+          <Row className="justify-center mt-36 lg:mt-24">
+            <Col md={10} xs={12}>
+              <Clients grid="row-cols-1 row-cols-md-4 row-cols-sm-2 gap-y-[40px]" theme="client-logo-style-02"
+                       data={ClientData} animation={fadeIn}/>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* Section End */}
 
       {/* Section Start */}
       <section className="overflow-hidden">
@@ -530,4 +640,4 @@ const LandingPage = (props) => {
   )
 }
 
-export default LandingPage
+export default RugklachtenPage

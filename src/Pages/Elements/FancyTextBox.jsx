@@ -74,26 +74,6 @@ const FancyTextBoxPage = () => {
             </m.section>
             {/* Section End */}
 
-            {/* Section Start */}
-            <m.section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]" {...fadeIn}>
-                <Container>
-                    <Row>
-                        <Col className="mb-[5%]">
-                            <h6 className="font-serif text-gray-900 text-center font-medium mb-[25px] lg:mb-[15px] ">Fancy text box style 03</h6>
-                        </Col>
-                    </Row>
-                    <Row className="justify-center mt-12">
-                        <Col xs={12} lg={12} md={8} sm={10}>
-                            <FancyTextBox
-                                grid="row-cols-1 row-cols-lg-2 gap-y-[15px]"
-                                theme="fancy-text-box-03"
-                                data={fancyTextBox03}
-                                animation={fadeIn} />
-                        </Col>
-                    </Row>
-                </Container>
-            </m.section>
-            {/* Section End */}
 
             {/* Section Start */}
             <m.section className="bg-darkgray py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]" {...fadeIn}>

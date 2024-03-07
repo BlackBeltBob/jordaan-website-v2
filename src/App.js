@@ -10,11 +10,14 @@ import GlobalContext from "./Context/Context";
 
 // Components
 import ScrollToTopButton from "./Components/ScrollToTop"
+import ChronicTreatmentsPage from "./Pages/ChronicTreatmentsPage";
 
 // Landing
 const LandingPage = lazy(() => import("./Pages/Home/Landing"))
+const RugklachtenPage = lazy(() => import("./Pages/Packages/RugklachtenPage"))
 const AboutUsPage = lazy(() => import('./Pages/About/AboutUsPage'))
 const TeamPage = lazy(() => import('./Pages/AdditionalPages/OurTeamPage'))
+const TariffsPage = lazy(() => import('./Pages/TariffsPage'))
 const MissionStatementPage = lazy(() => import('./Pages/About/MissionStatementPage'))
 const NotFoundPage = lazy(() => import("./Pages/404"))
 
@@ -90,6 +93,9 @@ function App() {
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route path="/page/our-team" element={<TeamPage />} />`
+                  <Route path="/page/pakket-rugklachten" element={<RugklachtenPage />} />`
+                  <Route path="/page/tariffs-2024" element={<TariffsPage />} />`
+                  <Route path="/page/chronic-healthcare" element={<ChronicTreatmentsPage />} />`
                   <Route path="/page/mission-statement" element={<MissionStatementPage />} />
                   <Route path="/*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
 

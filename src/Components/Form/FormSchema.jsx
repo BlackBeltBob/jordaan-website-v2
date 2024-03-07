@@ -12,7 +12,11 @@ export const ContactFormStyle02Schema = Yup.object().shape({
     name: Yup.string().required("Field is required."),
     email: Yup.string().email("Invalid email.").required("Field is required.")
 });
-
+export const ContactFormJordaanSchema = Yup.object().shape({
+    name: Yup.string().required("Field is required."),
+    email: Yup.string().email("Invalid email.").required("Field is required."),
+    phoneNumber: Yup.string().required("Field is required."),
+});
 export const ContactFormStyle03Schema = Yup.object().shape({
     name: Yup.string().required("Field is required."),
     email: Yup.string().email("Invalid email.").required("Field is required."),
