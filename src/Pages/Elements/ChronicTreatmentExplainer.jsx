@@ -198,7 +198,7 @@ const ChronicTreatmentsExplainer = memo((props) => {
         : explainer4;
 
   return (
-    <div className=''>
+    <div className='pb-10'>
       <div style={cellContainerStyle}>
         {treatmentGroups.map(group => {
           return (<div style={group.containerStyle}>
