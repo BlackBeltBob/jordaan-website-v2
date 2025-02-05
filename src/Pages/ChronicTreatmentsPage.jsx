@@ -1,16 +1,14 @@
 import React from 'react'
 
 // Libraries
-import {Col, Container, Navbar, Row, Tooltip} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Col, Container, Row} from "react-bootstrap";
 import {m} from 'framer-motion'
 
 // Components
-import {Header, HeaderNav, Menu, MobileMenu, SearchBar,} from "../Components/Header/Header";
 import FooterStyle01 from '../Components/Footers/FooterStyle01';
-import SideButtons from "../Components/SideButtons";
-import Accordions from "../Components/Accordion/Accordion";
 import ChronicTreatmentsExplainer from "./Elements/ChronicTreatmentExplainer";
+import {JordaanTopNav} from "../Components/Jordaan/JordaanTopNav";
+import {JordaanFAQSection} from "../Components/Jordaan/JordaanWhiteHeaderSection";
 
 
 const textIntro = 'Chronische behandeltrajecten';
@@ -21,7 +19,6 @@ const textWhatIsChronicHealthcareExt2 = 'Door de permanente aard van chronische 
 const textWhatIsChronicHealthcareExt3 = 'Stel; je hebt een chronische klacht en komt voor je eerste behandeling direct bij ons. Als je polisvoorwaarden 6 behandelingen vergoed, dan zal de zorgverzekeraar alle behandelingen vanaf de 7e tot en met de 20e behandeling niet vergoeden. Wij dienen ze wel in, zodat de zorgverzekeraar weet dat de behandeling gedaan is, maar zij zullen er niets van vergoeden. Voor deze behandelingen krijg je van ons een factuur. Vanaf de 21e behandeling wordt alles vergoed.';
 const textWhatIsChronicHealthcareExt4 = 'Die eerste 20 behandelingen gelden voor jouw zorgtraject. Dit betekent dat je, als je eerst 5 behandelingen bij een andere therapeut gehad hebt, nog 15 behandelingen te gaan hebt voor de behandelingen vergoed worden. Dit betekent ook dat (bij een vergoeding van 6 behandelingen) je van ons een factuur krijgt van 14 behandelingen. Het is dan ook handig om bij de intake duidelijk aan te geven hoeveel behandelingen je bij een andere therapeut gevolgd hebt.';
 const textWhatIsChronicHealthcareExt5 = 'Je zorgverzekering vergoed jaarlijks nieuwe behandelingen. Als je een pakket hebt voor 6 behandelingen, en eind december heb je de 6e behandeling bij ons gehad, dan zal de verzekeraar in het volgende jaar weer 6 nieuwe behandelingen vergoeden. Dit kan handig zijn om rekening mee te houden, vooral richting het eind van het jaar.';
-const textFAQHeader = "Veelgestelde vragen";
 
 const FrequentlyAskedQuestionData = [
   {
@@ -46,35 +43,8 @@ const ChronicTreatmentsPage = (props) => {
 
   return (
     <div style={props.style}>
-      <SideButtons/>
-      {/* Header Start */}
-      <Header topSpace={{md: true}} type="reverse-scroll">
-        <HeaderNav theme="light" expand="lg"
-                   className="spasalon-header py-[0px] px-[35px] md:px-[15px] md:py-[20px] sm:px-0 border-b border-[#ffffff1a]"
-                   fluid="fluid" containerClass="md:pr-0">
-          <Col className="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0 md:!px-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo'/>
-                <img className="alt-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
-                <img className="mobile-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Menu className="justify-center col-auto col-lg-8 menu-order md-position-initial md:hidden" {...props} />
-          <MobileMenu className="order-last d-lg-none" type="modern" {...props} />
-          <Col className="col-auto text-right pr-0 col-lg-2 px-lg-0 md-no-padding md:!px-0">
-            <SearchBar className="font-bold"/>
-          </Col>
-        </HeaderNav>
-      </Header>
-      {/* Header End */}
+      <JordaanTopNav />
+
 
 
 
@@ -115,24 +85,8 @@ const ChronicTreatmentsPage = (props) => {
         </Container>
       </section>
 
-      {/* Section Start */}
-      <section className="pt-[150px] pb-[150px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
-        <Container>
-          <Row className="justify-center text-jordaanText font-serif">
-            <Col>
-              <h6 className="font-serif text-jordaanText font-medium mb-[5%]">{textFAQHeader}</h6>
-              <Accordions
-                theme="accordion-style-02"
-                className="font-serif text-jordaanText"
-                themeColor="light"
-                data={FrequentlyAskedQuestionData}
-              />
 
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    {/* Section End */}
+      <JordaanFAQSection data={FrequentlyAskedQuestionData} />
 
 
       {/* Footer Start */}

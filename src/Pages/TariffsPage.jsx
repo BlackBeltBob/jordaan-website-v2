@@ -1,18 +1,16 @@
 import React from 'react'
 
 // Libraries
-import {Col, Container, Navbar, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Col, Container, Row} from "react-bootstrap";
 import {m} from 'framer-motion'
 
 // Components
 import Buttons from '../Components/Button/Buttons'
-import {Header, HeaderNav, Menu, MobileMenu, SearchBar,} from "../Components/Header/Header";
-import Overlap from '../Components/Overlap/Overlap';
 import FooterStyle01 from '../Components/Footers/FooterStyle01';
-import SideButtons from "../Components/SideButtons";
 import {fadeIn} from '../Functions/GlobalAnimations';
 import FancyTextBox from "../Components/FancyTextBox/FancyTextBox";
+import {JordaanTopNav} from "../Components/Jordaan/JordaanTopNav";
+import {Link as ScrollTo} from "react-scroll";
 
 
 const fancyTextBox = [
@@ -97,47 +95,21 @@ const textPackagesInfo = 'Als u een zorgverzekering heeft kan het zijn dat zij e
 const textPackagesInfo2 = 'Heeft u een <strong>chronische klacht</strong> als de ziekte van Parkinson of MS? De zorgverzekeraar vergoed dan op lange termijn uw behandelingen, maar mogelijk moet u aan het begin van het traject toch zelf behandelingen betalen. Lees hieronder meer over.';
 const textPackagesButton = "Hoe vergoeden zorgverzekeraars chonische klachten?"
 const textPackagesButtonUrl = `${process.env.PUBLIC_URL}/page/chronic-healthcare`;
-
+const textBitcoinHeader = "Een speciale korting als u betaalt met Bitcoin";
+const textBitcoinContent = "Bij Mensendieck & Fysiotherapiepraktijk Jordaan kun je een eventuele factuur ook betalen met Bitcoin. Omdat wij overtuigd zijn van de mogelijkheden en de potentie voor maatschappelijke verandering die Bitcoin biedt geven wij een korting op betalingen die voldaan worden in Bitcoin.";
 
 const TariffsPage = (props) => {
 
   return (
     <div style={props.style}>
-      <SideButtons/>
-      {/* Header Start */}
-      <Header topSpace={{md: true}} type="reverse-scroll">
-        <HeaderNav theme="light" expand="lg"
-                   className="spasalon-header py-[0px] px-[35px] md:px-[15px] md:py-[20px] sm:px-0 border-b border-[#ffffff1a]"
-                   fluid="fluid" containerClass="md:pr-0">
-          <Col className="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0 md:!px-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo'/>
-                <img className="alt-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
-                <img className="mobile-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-white-top@2x.webp' alt='logo'/>
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Menu className="justify-center col-auto col-lg-8 menu-order md-position-initial md:hidden" {...props} />
-          <MobileMenu className="order-last d-lg-none" type="modern" {...props} />
-          <Col className="col-auto text-right pr-0 col-lg-2 px-lg-0 md-no-padding md:!px-0">
-            <SearchBar className="font-bold"/>
-          </Col>
-        </HeaderNav>
-      </Header>
-      {/* Header End */}
+      <JordaanTopNav />
+
 
 
 
       {/* Section Start */}
       <section
-        className="pt-[350px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
+        className="pt-[250px] pb-[250px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
         {/*<section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>*/}
         <Container>
           <Row className="justify-center">
@@ -149,6 +121,10 @@ const TariffsPage = (props) => {
                 {textMottoExt}
               </m.h2>
             </Col>
+            <ScrollTo to="context" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block p-0 -translate-x-1/2 sm:bottom-7 xs:bottom-[4.5rem] cursor-pointer">
+              <i className="ti-arrow-down text-lg leading-[1] text-white bg-[#000000b3] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
+            </ScrollTo>
+
           </Row>
           {/*<IconWithText grid="row-cols-1 row-cols-lg-4 row-cols-sm-2 text-center" theme="icon-with-text-03"*/}
           {/*              data={IconWithTextData} animation={fadeIn} animationDelay={0.3}/>*/}
@@ -156,16 +132,8 @@ const TariffsPage = (props) => {
       </section>
       {/* Section End */}
 
-      <section className="pb-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] bg-jordaanYellow bg-cover bg-no-repeat relative bg-center">
+      <section id='context' className="py-[130px] lg:pb-[90px] md:pb-[75px] sm:pb-[50px] bg-jordaanYellow bg-cover bg-no-repeat relative bg-center">
                {/*style={{backgroundImage: 'url(https://via.placeholder.com/1920x625)'}}>*/}
-        <Container>
-          <Row className="justify-center">
-            <Overlap className="col-12 col-md-12 col-sm-8 md:mt-[75px]">
-              {/*<RotateBox grid="row-cols-1 row-cols-md-2 row-cols-lg-3 gap-y-10 justify-center" animation={fadeIn}*/}
-              {/*           animationDelay={0.2} data={RotateBoxData}/>*/}
-            </Overlap>
-          </Row>
-        </Container>
         <Container>
           <Row className="mt-36 md:mt-24 sm:mt-16">
             <Col lg={5} md={6}>
@@ -200,6 +168,43 @@ const TariffsPage = (props) => {
             data={fancyTextBox} />
         </Container>
       </section>
+
+      {/* Section Start */}
+      <section className="py-[80px] overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] bg-[#FFbb33]">
+        <Container>
+          <Row className="items-center justify-center">
+            <m.div
+              className="col col-xl-4 col-lg-5 col-md-10 md:mb-20"
+              {...fadeIn}
+            >
+              <h2 className="heading-5 font-serif text-jordaanText font-bold uppercase tracking-[-1px]">Betalen met Bitcoin</h2>
+              <blockquote className="border-l-[4px] text-jordaanText font-medium border-jordaanText text-xmd pl-[25px] pr-0 mt-[40px] mb-[30px] lg:w-[95%]">{textBitcoinHeader}</blockquote>
+              <p className="text-jordaanText w-[90%] mb-[25px] md:w-full">{textBitcoinContent}</p>
+              <Buttons
+                to="https://bitcoin.org/nl/hoe-het-werkt"
+                className="font-medium mt-[10px] btn-fancy font-serif tracking-[1px] uppercase text-decoration-underline btn-transparent rounded-none hover:text-white"
+                color="#232323"
+                size="sm"
+                themeColor="#232323"
+                title="wat is bitcoin?"
+                icon="fas fa-capsules" // orange-pill people!
+                target="_blank"
+              />
+            </m.div>
+            <m.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="col-12 col-md-10 col-lg-7 offset-xl-1"
+            >
+              <img height="200" width="" alt="..." src={`${process.env.PUBLIC_URL}/assets/img/webp/bitcoin.webp`} />
+            </m.div>
+          </Row>
+        </Container>
+      </section>
+      {/* Section End */}
+
 
       {/* Footer Start */}
       <FooterStyle01 theme="dark" className="bg-darkgray text-[#7e7e7e]"/>

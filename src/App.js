@@ -10,16 +10,24 @@ import GlobalContext from "./Context/Context";
 
 // Components
 import ScrollToTopButton from "./Components/ScrollToTop"
-import ChronicTreatmentsPage from "./Pages/ChronicTreatmentsPage";
 
 // Landing
 const LandingPage = lazy(() => import("./Pages/Home/Landing"))
 const RugklachtenPage = lazy(() => import("./Pages/Packages/RugklachtenPage"))
-const AboutUsPage = lazy(() => import('./Pages/About/AboutUsPage'))
 const TeamPage = lazy(() => import('./Pages/AdditionalPages/OurTeamPage'))
+const ReferrersPage = lazy(() => import('./Pages/AdditionalPages/ReferrersPage'))
 const TariffsPage = lazy(() => import('./Pages/TariffsPage'))
+const ChronicTreatmentsPage = lazy(() => import('./Pages/ChronicTreatmentsPage'))
+const ReviewsPremPage = lazy(() => import('./Pages/ReviewsPremPage'))
+const ReviewsTestimonialsPage = lazy(() => import('./Pages/ReviewsTestimonialsPage'))
+const ContractedInsurersPage = lazy(() => import('./Pages/ContractedInsurersPage'))
 const MissionStatementPage = lazy(() => import('./Pages/About/MissionStatementPage'))
+const CollaborationsPage = lazy(() => import('./Pages/AdditionalPages/CollaborationsPage'))
+const GeneralTreatmentsPage = lazy(() => import('./Pages/GeneralTreatmentsPage'))
+const HypnotherapyPage = lazy(() => import('./Pages/HypnotherapyPage'))
+const MovementGroupsPage = lazy(() => import('./Pages/MovementGroupsPage'))
 const NotFoundPage = lazy(() => import("./Pages/404"))
+
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -93,10 +101,19 @@ function App() {
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route path="/page/our-team" element={<TeamPage />} />`
+                  <Route path="/page/for-referrers" element={<ReferrersPage />} />`
                   <Route path="/page/pakket-rugklachten" element={<RugklachtenPage />} />`
                   <Route path="/page/tariffs-2024" element={<TariffsPage />} />`
                   <Route path="/page/chronic-healthcare" element={<ChronicTreatmentsPage />} />`
                   <Route path="/page/mission-statement" element={<MissionStatementPage />} />
+                  <Route path="/page/collaborations" element={<CollaborationsPage />} />
+                  <Route path="/page/reviews-prem" element={<ReviewsPremPage />} />`
+                  <Route path="/page/reviews-testimonials" element={<ReviewsTestimonialsPage />} />
+                  <Route path="/page/contracted-insurers" element={<ContractedInsurersPage />} />
+                  <Route path="/page/treatments" element={<GeneralTreatmentsPage />} />
+                  <Route path="/page/treatment-hypnotherapy" element={<HypnotherapyPage />} />
+                  <Route path="/page/treatment-exercisegroups" element={<MovementGroupsPage />} />
+                  <Route path="/page/treatment-parkinsonism" element={<ReviewsTestimonialsPage />} />
                   <Route path="/*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
 
                   {/*/!* Elements *!/*/}

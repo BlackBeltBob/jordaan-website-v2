@@ -13,21 +13,4 @@ header {
     transform: rotate(180deg);
 }
 
-@font-face {
-    font-family: 'Turnpike';
-    src: url("../../../assets/fonts/Turnpike.ttf") format("truetype"), url("../../../assets/fonts/Turnpike.woff2") format("woff2"), url("../../../assets/fonts/Turnpike.woff") format("woff");
-}
-
-@font-face {
-    font-family:"Aller Regular";
-    font-display:swap;
-    url("assets/fonts/Aller_Rg.ttf") format("truetype")
-}
-
-@font-face {
-    font-family:"Aller Bold";
-    font-display:swap;
-    url("assets/fonts/Aller_Bd.ttf") format("truetype");
-    font-weight:bold
-}
 

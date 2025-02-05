@@ -28,6 +28,8 @@ import {resetForm, sendEmail} from "../../Functions/Utilities";
 import {blogData} from '../../Components/Blogs/BlogData';
 import {JordaanHeader} from "../../Components/Jordaan/JordaanHeader";
 import {JordaanContactForm} from "../../Components/Jordaan/JordaanContactForm";
+import {JordaanTopNav} from "../../Components/Jordaan/JordaanTopNav";
+import {Link as ScrollTo} from "react-scroll";
 
 const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithText'))
 
@@ -70,12 +72,12 @@ const HighlightsData = [
     content: 'Vind jezelf terug door meer kennis over je lichaam op te doen',
   },
   {
-    url: `${process.env.PUBLIC_URL}/assets/img/webp/spa-image-05.webp`,
+    url: `${process.env.PUBLIC_URL}/assets/img/webp/spa-image-06.webp`,
     title: 'Kom tot de essentie',
     content: 'Veel klachten zijn symptomen van een onderliggende kwaal. Samen vinden we die, en lossen het op',
   },
   {
-    url: `${process.env.PUBLIC_URL}/assets/img/webp/spa-image-05.webp`,
+    url: `${process.env.PUBLIC_URL}/assets/img/webp/spa-image-07.webp`,
     title: 'Kom tot rust',
     content: 'Stress of slapeloosheid leiden tot een dysbalans die we kunnen aanpakken',
   },
@@ -105,28 +107,6 @@ const TestimonialsCarouselData = [
     img: "https://via.placeholder.com/359x359"
   }
 ]
-const ClientData = [
-  {
-    img: 'https://via.placeholder.com/140x110',
-    target: "_self",
-    link: '#'
-  },
-  {
-    img: 'https://via.placeholder.com/140x110',
-    target: "_self",
-    link: '#'
-  },
-  {
-    img: 'https://via.placeholder.com/140x110',
-    target: "_self",
-    link: '#'
-  },
-  {
-    img: 'https://via.placeholder.com/140x110',
-    target: "_self",
-    link: '#'
-  }
-]
 
 const IconWithTextData = [
   {
@@ -151,54 +131,7 @@ const IconWithTextData = [
   },
 ]
 
-const InteractiveBannersData01 = [
-  {
-    subtitle: "Relaxing",
-    title: "Rest and your energy will be restored",
-    img: "https://via.placeholder.com/800x1018",
-    btnTitle: "Learn more",
-    btnLink: "#"
-  },
-  {
-    subtitle: "Massage",
-    title: "Massage day is the best day of the week",
-    img: "https://via.placeholder.com/800x1018",
-    btnTitle: "learn more",
-    btnLink: "#"
-  },
-  {
-    subtitle: "Massage",
-    title: "Relax like your life depends on it",
-    img: "https://via.placeholder.com/800x1018",
-    btnTitle: "learn more",
-    btnLink: "#"
-  },
-  {
-    subtitle: "Relaxing",
-    title: "Spa days are a necessity not a luxury",
-    img: "https://via.placeholder.com/800x1018",
-    btnTitle: "learn more",
-    btnLink: "#"
-  },
-]
 
-const SwiperImgData = [
-  {
-    img: "https://via.placeholder.com/1920x1080",
-    img2: "/assets/img/webp/spa-image-01.webp",
-    title: "something for mind and soul",
-  },
-  {
-    img: "https://via.placeholder.com/1920x1080",
-    img2: "https://via.placeholder.com/620x223",
-    title: "something for mind and soul",
-  },
-  {
-    img: "https://via.placeholder.com/1920x1080",
-    img2: "https://via.placeholder.com/623x189",
-    title: "something for mind and soul",
-  },
-]
 
 const textMissionStatement = 'Ontdek wat onze holistische aanpak voor jou kan betekenen';
 const textVision = 'Onze praktijk kenmerkt zich door de holistische benadering: combineert veel verschillende specialisaties, zodat je een effectieve en efficiënte behandeling krijgt.';
@@ -218,42 +151,11 @@ const textGeriatricLink = 'Lees meer';
 const blogModernData = blogData.filter((item) => item.blogType === "modern");
 
 const LandingPage = (props) => {
-  const swiperRef = React.useRef(null)
-  const swiperpakage = React.useRef(null)
   const swiperReff = React.useRef(null)
-  const [activeSlide, setActiveSlide] = useState(0)
 
   return (
     <div style={props.style}>
-      <SideButtons/>
-      {/* Header Start */}
-      <Header topSpace={{md: true}} type="reverse-scroll">
-        <HeaderNav theme="light" expand="lg"
-                   className="spasalon-header py-[0px] px-[35px] md:px-[15px] md:py-[20px] sm:px-0 border-b border-[#ffffff1a]"
-                   fluid="fluid" containerClass="md:pr-0">
-          <Col className="col-5 col-lg-2 ps-lg-0 me-auto me-lg-0 md:!px-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-yellow-top.png`}
-                     data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo'/>
-                <img className="alt-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
-                <img className="mobile-logo" width="163" height="36" loading="lazy"
-                     src={`${process.env.PUBLIC_URL}/assets/img/webp/logo/logo-white-top.png`}
-                     data-rjs='/assets/img/webp/logo-gradient-tan-geraldine@2x.webp' alt='logo'/>
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Menu className="justify-center col-auto col-lg-8 menu-order md-position-initial md:hidden" {...props} />
-          <MobileMenu className="order-last d-lg-none" type="modern" {...props} />
-          <Col className="col-auto text-right pr-0 col-lg-2 px-lg-0 md-no-padding md:!px-0">
-            <SearchBar className="font-bold"/>
-          </Col>
-        </HeaderNav>
-      </Header>
-      {/* Header End */}
+      <JordaanTopNav />
 
 
       {/* Section Mission Statement start */}
@@ -279,13 +181,16 @@ const LandingPage = (props) => {
                        className="font-semibold font-serif uppercase btn-link after:h-[1px] md:text-md md:mb-[15px] after:bg-[#333045] hover:text-darkgray"
                        size="xlg" color="#333045" title={textMissionLink}/>
             </m.div>
+            <ScrollTo to="mission" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block p-0 -translate-x-1/2 sm:bottom-7 xs:bottom-[4.5rem] cursor-pointer">
+              <i className="ti-arrow-down text-lg leading-[1] text-white bg-[#000000b3] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
+            </ScrollTo>
           </Row>
         </Container>
       </section>
       {/* Section Mission Statement end */}
 
       {/* Section Start */}
-      <section
+      <section id="mission"
         className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]">
         {/*<section className="pt-[130px] pb-[350px] lg:pt-[90px] md:pt-[75px] sm:pt-[50px] cover-background md:pb-[75px] sm:pb-[50px]" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>*/}
         <Container>
@@ -387,141 +292,6 @@ const LandingPage = (props) => {
 
 
 
-      {/* Section Start */}
-      <section className="overflow-hidden">
-        <Row className="g-0">
-          <m.div className="col-xl-6 bg-cover lg:h-[600px] md:h-[500px] sm:h-[350px] relative"
-                 style={{backgroundImage: 'url(https://via.placeholder.com/950x668)'}} {...fadeIn}>
-          </m.div>
-          <Col xl={6} className="relative p-0">
-            <div className="flex absolute bottom-0 right-full z-10 lg:right-0">
-              <div onClick={() => swiperReff.current.swiper.slidePrev()}
-                   className="btn-slider-next bg-[#00000080] hover:bg-[#fff]  text-[#fff] hover:text-darkgray h-[62px] transition-default w-[62px] leading-[62px] text-[18px] absolute right-0 left-auto  z-10 bottom-[63px] flex items-center justify-center cursor-pointer md:w-[70px]">
-                <button aria-label="swiper next link" className="text-xmd"><i className="feather-arrow-left"></i>
-                </button>
-              </div>
-              <div onClick={() => swiperReff.current.swiper.slideNext()}
-                   className="btn-slider-prev bg-[#00000080] hover:bg-[#fff]  text-[#fff] hover:text-darkgray h-[62px] transition-default w-[62px] leading-[62px] text-[18px] absolute right-0 left-auto bottom-0 z-10 flex items-center justify-center cursor-pointer md:w-[70px]">
-                <button aria-label="swiper prev link" className="text-xmd"><i className="feather-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-            <Swiper ref={swiperReff} loop={true} modules={[Autoplay]} autoHeight={false} className="black-move">
-              <SwiperSlide className="cover-background"
-                           style={{backgroundImage: 'url(https://via.placeholder.com/950x668)'}}>
-                <div className="text-center h-full">
-                  <div
-                    className="flex flex-col justify-center bg-[#f7edee] py-28 px-[9.5rem] h-full w-[70%] xl:px-20 lg:w-[55%] md:p-16 xs:px-8 md:w-[65%] sm:w-[70%] xs:w-full">
-                    <div>
-                      <img
-                        className="rounded-full mx-auto shadow-[0_0_15px_rgba(0,0,0,0.1)] w-[150px] h-[150px] border-[8px] border-white mb-[40px] xs:mb-[30px] xs:mx-auto"
-                        src="https://via.placeholder.com/250x250" alt="" data-no-retina=""/>
-                      <div className="font-serif text-[36px] leading-[42px] font-semibold text-darkgray mb-[30px] tracking-[-1px] xs:mb-[20px]">
-                        {textGeriatricHeader}
-                      </div>
-                      <p className="mb-[25px]">{textGeriatricContent}</p>
-                      <Buttons ariaLabel="Explore more" href={textGeriatricUrl}
-                               className="mx-3 font-medium after:bg-black hover:text-black font-serif uppercase btn-link after:h-[1px] md:text-md"
-                               color="#000" title={textGeriatricLink} size="xl"/>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cover-background"
-                           style={{backgroundImage: 'url(https://via.placeholder.com/950x668)'}}>
-                <div className="text-center h-full">
-                  <div
-                    className="flex flex-col justify-center bg-[#f7edee] py-28 px-[9.5rem] h-full w-[70%] xl:px-20 lg:w-[55%] md:p-16 md:w-[65%] sm:w-[70%] xs:w-full">
-                    <div>
-                      <img
-                        className="rounded-full mx-auto shadow-[0_0_15px_rgba(0,0,0,0.1)] w-[150px] h-[150px] border-[8px] border-white mb-[40px] xs:mb-[30px] xs:mx-auto"
-                        src="/assets/img/webp/spa-image-05.webp" alt="" data-no-retina=""/>
-                      <div
-                        className="font-serif text-[36px] leading-[42px] font-semibold text-darkgray mb-[30px] tracking-[-1px] xs:mb-[20px]">A
-                        good weekend starts with a positive attitude
-                      </div>
-                      <p className="mb-[25px]">Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim quis nostrud exercitation ullamco.</p>
-                      <Buttons href="#"
-                               className="mx-3 font-medium after:bg-black hover:text-black font-serif uppercase btn-link after:h-[1px] md:text-md"
-                               color="#000" title="Explore more" size="xl"/>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cover-background"
-                           style={{backgroundImage: 'url(https://via.placeholder.com/950x668)'}}>
-                <div className="text-center h-full">
-                  <div
-                    className="flex flex-col justify-center bg-[#f7edee] py-28 px-[9.5rem] h-full w-[70%] xl:px-20 lg:w-[55%] md:p-16 md:w-[65%] sm:w-[70%] xs:w-full">
-                    <div>
-                      <img
-                        className="rounded-full mx-auto shadow-[0_0_15px_rgba(0,0,0,0.1)] w-[150px] h-[150px] border-[8px] border-white mb-[40px] xs:mb-[30px] xs:mx-auto"
-                        src="https://via.placeholder.com/250x250" alt="" data-no-retina=""/>
-                      <div
-                        className="font-serif text-[36px] leading-[42px] font-semibold text-darkgray mb-[30px] tracking-[-1px] xs:mb-[20px]">Spa
-                        days are a necessity not a luxury
-                      </div>
-                      <p className="mb-[25px]">Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim quis nostrud exercitation ullamco.</p>
-                      <Buttons href="#"
-                               className="mx-3 font-medium after:bg-black hover:text-black font-serif uppercase btn-link after:h-[1px] md:text-md"
-                               color="#000" title="Explore more" size="xl"/>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </Col>
-        </Row>
-      </section>
-      {/* Section End */}
-
-      {/* Section Start */}
-      <section className="py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]">
-        <Container>
-          <Row className="justify-center">
-            <m.div className="text-left md:text-center md:mb-[50px] col-lg-4 col-sm-8" {...{
-              ...fadeIn,
-              transition: {delay: 0.2}
-            }}>
-              <span
-                className="font-serif font-medium text-gradient bg-gradient-to-r from-[#ec606c] to-[#eb7242] uppercase inline-block mb-[15px] sm:mb-[5px]">{textTestimonalsHeader}</span>
-              <h2
-                className="heading-5 font-serif font-medium text-darkgray tracking-[-1px] m-0">{textTestimonalsText}</h2>
-            </m.div>
-            <m.div className="col-xl-7 col-lg-8 offset-xl-1" {...{...fadeIn, transition: {delay: 0.6}}}>
-              <TestimonialsCarousel05 data={TestimonialsCarouselData} carouselOption={{
-                slidesPerView: 1,
-                loop: true,
-                navigation: false,
-                autoplay: {delay: 10000, disableOnInteraction: false},
-              }}/>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
-
-      {/* Section Start */}
-      <section className="pt-[130px] pb-[100px] lg:pt-[90px] lg:pb-[50px] md:pt-[75px] sm:pt-[50px] bg-lightgray">
-        <Container>
-          <Row className="justify-center">
-            <Col lg={6} sm={8} className="col-12 text-center mb-20 md:mb-12">
-              <span className="font-serif font-medium text-basecolor uppercase inline-block mb-[10px] sm:mb-[5px]">Latest blogs</span>
-              <h2 className="heading-5 font-serif font-semibold text-darkgray m-0">Interesting stories</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="xs:px-0">
-              <BlogModern overlay={["#fb7f87", "#fb957f", "#f7aa80"]} pagination={false}
-                          grid="grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large md:pt-[4.5rem] xs:pt-0"
-                          data={blogModernData.slice(0, 3)}/>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
 
       {/* Footer Start */}
       <FooterStyle01 theme="dark" className="bg-darkgray text-[#7e7e7e]"/>

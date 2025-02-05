@@ -355,8 +355,8 @@ header {
       z-index: 10;
       top: 100%;
       position: absolute;
-      left: 0;
-      transform: inherit;
+      left: 50%;
+      transform: translateX(-50%);
       opacity: 0;
       visibility: hidden;
       padding: 60px 80px;

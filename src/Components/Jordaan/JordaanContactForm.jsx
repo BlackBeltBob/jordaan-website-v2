@@ -32,7 +32,7 @@ export class JordaanContactForm extends React.Component {
              className="col-12 relative bg-white rounded-[6px] shadow-[0_0_20px_rgba(0,0,0,0.1)] mx-auto overflow-hidden">
           <Row>
             <Col md={4} className="col-12 bg-no-repeat bg-cover overflow-hidden relative bg-center sm:h-[350px]"
-                 style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/webp/temp2.webp)`}}></Col>
+                 style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/webp/temp3.webp)`}}></Col>
             <Col md={8} className="col-12 p-24 xs:p-14 md:p-10">
               <h2 className="heading-5 font-serif font-bold text-[#262b35] uppercase tracking-[-1px] w-[90%] mb-[20px]">
                 {textContactFormHeader}</h2>

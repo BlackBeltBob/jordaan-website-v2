@@ -26,6 +26,7 @@ import { Link as ScrollTo } from "react-scroll"
 // Data
 import { fancyTextBox04 } from '../../Components/FancyTextBox/FancyTextBoxData';
 import { TeamData04 } from '../../Components/Team/TeamData';
+import {JordaanTopNav} from "../../Components/Jordaan/JordaanTopNav";
 
 const TestimonialsCarouselData = [
   {
@@ -125,30 +126,12 @@ const MissionStatementPage = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
-      <Header topSpace={{ md: true }} type="reverse-scroll">
-        <HeaderNav theme="dark" expand="lg" className="py-[0px] lg:px-[15px] md:px-0" containerClass="sm:px-0">
-          <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-white.webp' data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Navbar.Collapse className="col-auto px-0 justify-end">
-            <Menu {...props} />
-          </Navbar.Collapse>
-          <Col className="col-auto text-right pe-0">
-            <SearchBar className="pr-0 xs:pl-[15px]" />
-          </Col>
-        </HeaderNav>
-      </Header>
+      <JordaanTopNav background='white'/>
       {/* Header End */}
-      <SideButtons />
+
       {/* Parallax Scrolling Start */}
       <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] flex items-center overflow-hidden relative">
-        <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
+        <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/webp/hofje.webp)` }}></Parallax>
         <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-darkgray"></div>
         <Container>
           <Row className="items-center justify-center">
