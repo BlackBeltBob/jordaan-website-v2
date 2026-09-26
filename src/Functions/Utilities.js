@@ -89,7 +89,7 @@ export const InputField = (value) => {
 }
 
 export const sendEmail = async (data) => {
-    const req = await fetch(`${process.env.REACT_APP_API_URL}/send`, {
+    const req = await fetch(process.env.REACT_APP_API_URL, {
         method: 'post',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)

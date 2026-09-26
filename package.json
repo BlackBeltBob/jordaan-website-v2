@@ -52,6 +52,7 @@
     "deploy": "gh-pages -d build",
     "start": "PUBLIC_URL=http://localhost:3000/jordaan-website-v2 react-scripts start",
     "build": "PUBLIC_URL=/jordaan-website-v2 craco build",
+    "build:hosting": "PUBLIC_URL= REACT_APP_API_URL=/send.php craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "run-p sass tailwind pages",

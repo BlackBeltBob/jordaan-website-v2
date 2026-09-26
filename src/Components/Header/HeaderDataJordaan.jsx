@@ -25,7 +25,7 @@ const HeaderDataJordaan = [
                         link: '/page/for-referrers'
                     },
                     {
-                        icon: 'fas fa-skull-crossbones', //'far fa-comment-dots',
+                        icon: 'fas fa-envelope',
                         title: 'Contact',
                         link: '/page/contact-form'
                     },
@@ -105,17 +105,17 @@ const HeaderDataJordaan = [
                 title: 'Pakketten',
                 dropdown: [
                     {
-                        icon: 'fas fa-skull-crossbones',
+                        icon: 'fas fa-walking',
                         title: 'Rugklachten',
                         link: '/page/pakket-rugklachten'
                     },
                     {
-                        icon: 'fas fa-skull-crossbones',
+                        icon: 'fas fa-user-injured',
                         title: 'Nekklachten',
                         link: '/page/pakket-nekklachten'
                     },
                     {
-                        icon: 'fas fa-skull-crossbones',
+                        icon: 'fas fa-bed',
                         title: 'Slaaptraining',
                         link: '/page/pakket-slaaptraining'
                     },
