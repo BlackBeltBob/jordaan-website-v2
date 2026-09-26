@@ -38,6 +38,20 @@ export const Checkbox = memo(({label, labelClass, className, children, ...props 
     )
 })
 
+export const Select = memo(({ label, labelClass, className, showErrorMsg, children, ...props }) => {
+    const [field, meta] = useField(props);
+
+    return (
+        <label className={`block relative${(meta.touched && meta.error) ? " errors-danger" : ""}${labelClass ? ` ${labelClass}` : ""}`}>
+            {label}
+            <select className={`${className}${meta.touched && meta.error ? " errors-danger" : ""}`} {...field} {...props}>
+                {children}
+            </select>
+            {meta.touched && meta.error && showErrorMsg ? <span className="text-sm text-error block mt-[5px]">{meta.error}</span> : null}
+        </label>
+    );
+});
+
 Input.defaultProps = {
     showErrorMsg: true
 }

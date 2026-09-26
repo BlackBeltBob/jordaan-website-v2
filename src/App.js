@@ -26,6 +26,10 @@ const CollaborationsPage = lazy(() => import('./Pages/AdditionalPages/Collaborat
 const GeneralTreatmentsPage = lazy(() => import('./Pages/GeneralTreatmentsPage'))
 const HypnotherapyPage = lazy(() => import('./Pages/HypnotherapyPage'))
 const MovementGroupsPage = lazy(() => import('./Pages/MovementGroupsPage'))
+const ParkinsonismPage = lazy(() => import('./Pages/ParkinsonismPage'))
+const ContactPage = lazy(() => import('./Pages/ContactPage'))
+const NekklachtenPage = lazy(() => import('./Pages/Packages/NekklachtenPage'))
+const SlaaptrainingPage = lazy(() => import('./Pages/Packages/SlaaptrainingPage'))
 const NotFoundPage = lazy(() => import("./Pages/404"))
 
 
@@ -100,20 +104,23 @@ function App() {
               <Suspense fallback={<></>}>
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
-                  <Route path="/page/our-team" element={<TeamPage />} />`
-                  <Route path="/page/for-referrers" element={<ReferrersPage />} />`
-                  <Route path="/page/pakket-rugklachten" element={<RugklachtenPage />} />`
-                  <Route path="/page/tariffs-2024" element={<TariffsPage />} />`
-                  <Route path="/page/chronic-healthcare" element={<ChronicTreatmentsPage />} />`
+                  <Route path="/page/our-team" element={<TeamPage />} />
+                  <Route path="/page/for-referrers" element={<ReferrersPage />} />
+                  <Route path="/page/pakket-rugklachten" element={<RugklachtenPage />} />
+                  <Route path="/page/pakket-nekklachten" element={<NekklachtenPage />} />
+                  <Route path="/page/pakket-slaaptraining" element={<SlaaptrainingPage />} />
+                  <Route path="/page/tariffs-2024" element={<TariffsPage />} />
+                  <Route path="/page/chronic-healthcare" element={<ChronicTreatmentsPage />} />
                   <Route path="/page/mission-statement" element={<MissionStatementPage />} />
                   <Route path="/page/collaborations" element={<CollaborationsPage />} />
-                  <Route path="/page/reviews-prem" element={<ReviewsPremPage />} />`
+                  <Route path="/page/reviews-prem" element={<ReviewsPremPage />} />
                   <Route path="/page/reviews-testimonials" element={<ReviewsTestimonialsPage />} />
                   <Route path="/page/contracted-insurers" element={<ContractedInsurersPage />} />
                   <Route path="/page/treatments" element={<GeneralTreatmentsPage />} />
                   <Route path="/page/treatment-hypnotherapy" element={<HypnotherapyPage />} />
                   <Route path="/page/treatment-exercisegroups" element={<MovementGroupsPage />} />
-                  <Route path="/page/treatment-parkinsonism" element={<ReviewsTestimonialsPage />} />
+                  <Route path="/page/treatment-parkinsonism" element={<ParkinsonismPage />} />
+                  <Route path="/page/contact-form" element={<ContactPage />} />
                   <Route path="/*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
 
                   {/*/!* Elements *!/*/}

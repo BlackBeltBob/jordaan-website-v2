@@ -13,9 +13,19 @@ export const ContactFormStyle02Schema = Yup.object().shape({
     email: Yup.string().email("Invalid email.").required("Field is required.")
 });
 export const ContactFormJordaanSchema = Yup.object().shape({
-    name: Yup.string().required("Field is required."),
-    email: Yup.string().email("Invalid email.").required("Field is required."),
-    phoneNumber: Yup.string().required("Field is required."),
+    voornaam: Yup.string().required("Verplicht veld."),
+    tussenvoegsel: Yup.string(),
+    achternaam: Yup.string().required("Verplicht veld."),
+    straatnaam: Yup.string().required("Verplicht veld."),
+    huisnummer: Yup.string().required("Verplicht veld."),
+    postcode: Yup.string().required("Verplicht veld."),
+    woonplaats: Yup.string().required("Verplicht veld."),
+    telefoonnummer: Yup.string().required("Verplicht veld."),
+    emailadres: Yup.string().email("Ongeldig e-mailadres.").required("Verplicht veld."),
+    ref: Yup.string(),
+    product: Yup.string(),
+    hulpvraag: Yup.string(),
+    website: Yup.string(),
 });
 export const ContactFormStyle03Schema = Yup.object().shape({
     name: Yup.string().required("Field is required."),

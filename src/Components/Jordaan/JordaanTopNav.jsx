@@ -5,8 +5,6 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 export const JordaanTopNav = (props) => {
-  console.log('background: ', props);
-
   return <>
     <SideButtons/>
     {/* Header Start */}
