@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunklitho=self.webpackChunklitho||[]).push([[139],{58311:function(t,e,s){s.r(e);s(72791);var u=s(4573),l=s(98466),n=s(80184);e.default=function(t){return(0,n.jsx)(u.Z,{style:t.style,data:l.qt})}}}]);
-//# sourceMappingURL=139.c93ca2b7.chunk.js.map
