@@ -101,6 +101,13 @@ const OurTeamPage = (props) => {
             grid="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 justify-center"
             carousel={false}
             carouselOption={{ slidesPerView: 3, spaceBetween: 30, loop: true, navigation: true, autoplay: { delay: 3000, disableOnInteraction: true }, pagination: { dynamicBullets: true, clickable: true } }} />
+          <Row className="justify-center mt-12">
+            <Col className="text-center">
+              <Link aria-label="Lees meer over Deborah Pos" to="/page/bio-deborah-pos" className="font-medium font-serif uppercase btn-link after:h-[1px] after:bg-jordaanText text-jordaanText">
+                Lees meer over Deborah Pos
+              </Link>
+            </Col>
+          </Row>
         </Container>
       </section>
       {/* Section Start */}

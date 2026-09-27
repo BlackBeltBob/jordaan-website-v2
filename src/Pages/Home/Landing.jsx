@@ -113,11 +113,15 @@ const IconWithTextData = [
     icon: "line-icon-MaleFemale text-[40px] text-jordaanText mb-[30px]",
     title: "GERIATRIE OEFENTHERAPIE",
     content: "Gespecialiseerde oefentherapie met een focus op ouderen.",
+    linkTitle: 'Lees meer',
+    link: '/page/treatment-geriatric',
   },
   {
     icon: "line-icon-Master-Card text-[40px] text-jordaanText mb-[30px]",
     title: "OEFENTHERAPIE & FYSIOTHERAPIE",
     content: "Een krachtige combinatie van disciplines",
+    linkTitle: 'Lees meer',
+    link: '/page/treatments',
   },
   {
     icon: "line-icon-Support text-[40px] text-jordaanText mb-[30px]",
@@ -142,10 +146,6 @@ const textTestimonalsHeader = 'Testimonials';
 const textTestimonalsText = 'Wat onze clienten over onze service zeggen';
 const textPackagesHeader = 'Online trainingspakketten om helder, veilig, en betaalbaar op je eigen tempo werken aan je gezondheid.';
 const textPackagesInfo = 'Onze praktijk biedt online trainingspakketten aan. Elk trainingspakket bestaat uit een intake, en meerdere online instructies en contactmomenten.';
-const textGeriatricHeader = 'De specialisatie Geriatrieoefentherapie';
-const textGeriatricContent = 'Geriatrieoefentherapie is een gespecialiseerde vorm van paramedische zorg gericht op het behandelen van lichamelijke klachten bij ouderen. Het richt zich op het verbeteren van mobiliteit, spierkracht, balans en coördinatie, met als doel het bevorderen van zelfstandigheid en de kwaliteit van leven van oudere individuen. De therapie omvat specifieke oefeningen en advies om ouderen te ondersteunen bij het behouden of verbeteren van hun dagelijks functioneren in hun eigen leefomgeving.';
-const textGeriatricUrl = '#';
-const textGeriatricLink = 'Lees meer';
 
 // Filter the blog data category wise
 const blogModernData = blogData.filter((item) => item.blogType === "modern");

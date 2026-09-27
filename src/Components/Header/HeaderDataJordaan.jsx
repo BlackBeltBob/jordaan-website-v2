@@ -15,6 +15,11 @@ const HeaderDataJordaan = [
                         link: '/page/our-team'
                     },
                     {
+                        icon: 'fas fa-id-card',
+                        title: 'Deborah Pos',
+                        link: '/page/bio-deborah-pos'
+                    },
+                    {
                         icon: 'solid-icon-Target',
                         title: 'Onze missie',
                         link: '/page/mission-statement'
@@ -138,6 +143,16 @@ const HeaderDataJordaan = [
                         icon: 'fas fa-users',
                         title: 'Bewegingsgroepen',
                         link: '/page/treatment-exercisegroups'
+                    },
+                    {
+                        icon: 'fas fa-brain',
+                        title: 'Neurologische klachten',
+                        link: '/page/treatment-neurological'
+                    },
+                    {
+                        icon: 'fas fa-user-friends',
+                        title: 'Geriatrie oefentherapie',
+                        link: '/page/treatment-geriatric'
                     },
                 ]
             },

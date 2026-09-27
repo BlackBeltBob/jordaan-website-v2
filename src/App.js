@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState, lazy } from "react";
 
 // Libraries
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import retina from "retinajs";
 import { AnimatePresence } from "framer-motion";
 
@@ -26,7 +26,9 @@ const CollaborationsPage = lazy(() => import('./Pages/AdditionalPages/Collaborat
 const GeneralTreatmentsPage = lazy(() => import('./Pages/GeneralTreatmentsPage'))
 const HypnotherapyPage = lazy(() => import('./Pages/HypnotherapyPage'))
 const MovementGroupsPage = lazy(() => import('./Pages/MovementGroupsPage'))
-const ParkinsonismPage = lazy(() => import('./Pages/ParkinsonismPage'))
+const NeurologicalConditionsPage = lazy(() => import('./Pages/NeurologicalConditionsPage'))
+const GeriatricTreatmentPage = lazy(() => import('./Pages/GeriatricTreatmentPage'))
+const DeborahBioPage = lazy(() => import('./Pages/AdditionalPages/DeborahBioPage'))
 const ContactPage = lazy(() => import('./Pages/ContactPage'))
 const NekklachtenPage = lazy(() => import('./Pages/Packages/NekklachtenPage'))
 const SlaaptrainingPage = lazy(() => import('./Pages/Packages/SlaaptrainingPage'))
@@ -119,7 +121,10 @@ function App() {
                   <Route path="/page/treatments" element={<GeneralTreatmentsPage />} />
                   <Route path="/page/treatment-hypnotherapy" element={<HypnotherapyPage />} />
                   <Route path="/page/treatment-exercisegroups" element={<MovementGroupsPage />} />
-                  <Route path="/page/treatment-parkinsonism" element={<ParkinsonismPage />} />
+                  <Route path="/page/treatment-neurological" element={<NeurologicalConditionsPage />} />
+                  <Route path="/page/treatment-parkinsonism" element={<Navigate to="/page/treatment-neurological" replace />} />
+                  <Route path="/page/treatment-geriatric" element={<GeriatricTreatmentPage />} />
+                  <Route path="/page/bio-deborah-pos" element={<DeborahBioPage />} />
                   <Route path="/page/contact-form" element={<ContactPage />} />
                   <Route path="/*" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
 

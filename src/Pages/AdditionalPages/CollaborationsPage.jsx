@@ -38,6 +38,7 @@ const CollaborationsPage = (props) => {
 
   const textCollaborationsHeader = 'Samenwerkingspartners';
   const textCollaborationsBody = 'Met deze partners werken wij samen';
+  const textCollaborationsIntro = 'We geloven sterk in een multidisciplinaire aanpak om de beste zorg te bieden aan onze cliënten. Door nauw samen te werken met huisartsen, specialisten en andere zorgprofessionals, zoals ergotherapeuten, psychologen en diëtisten, kunnen we een geïntegreerde benadering creëren en effectieve behandelplannen opstellen.';
 
   return (
     <div style={props.style}>
@@ -57,6 +58,11 @@ const CollaborationsPage = (props) => {
               <m.h2 className="heading-5 font-serif text-jordaanText font-medium tracking-[-1px]">
                 {textCollaborationsBody}
               </m.h2>
+            </Col>
+          </Row>
+          <Row className="justify-center">
+            <Col lg={8} className="text-center font-serif text-jordaanText">
+              <p>{textCollaborationsIntro}</p>
             </Col>
           </Row>
         </Container>
