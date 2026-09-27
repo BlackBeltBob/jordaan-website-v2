@@ -8,7 +8,7 @@ import { m } from 'framer-motion';
 import { PropTypes } from "prop-types";
 import { Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard, Navigation, Pagination } from "swiper";
+import {Autoplay, Keyboard, Navigation, Pagination} from "swiper/modules";
 
 // css
 import "../../Assets/scss/components/_testimonials.scss"

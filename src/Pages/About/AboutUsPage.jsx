@@ -17,7 +17,7 @@ import SideButtons from "../../Components/SideButtons";
 
 // Libraries
 import { Link } from "react-router-dom";
-import { Navigation } from "swiper";
+import {Navigation} from "swiper/modules";
 import { Col, Container, Row, Navbar } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 import { Swiper, SwiperSlide } from "swiper/react";

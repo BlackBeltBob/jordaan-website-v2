@@ -2,7 +2,7 @@ import React, { memo, useRef } from 'react'
 
 // Libraries
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard, Navigation, Pagination } from "swiper";
+import {Autoplay, Keyboard, Navigation, Pagination} from "swiper/modules";
 import { Link } from 'react-router-dom'
 import { PropTypes } from "prop-types";
 import { m } from "framer-motion";

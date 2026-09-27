@@ -2,7 +2,7 @@ import React from 'react'
 
 // Libraries
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard, Pagination } from "swiper";
+import {Autoplay, Keyboard, Pagination} from "swiper/modules";
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { m } from "framer-motion";

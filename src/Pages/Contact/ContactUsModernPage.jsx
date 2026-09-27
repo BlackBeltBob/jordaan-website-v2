@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Keyboard } from "swiper";
+import {Autoplay, EffectFade, Keyboard} from "swiper/modules";
 import { Formik, Form } from 'formik';
 import { AnimatePresence, m } from 'framer-motion';
 

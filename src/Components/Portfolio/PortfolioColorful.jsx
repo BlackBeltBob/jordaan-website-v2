@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { PropTypes } from "prop-types";
 import { m } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
+import {Autoplay, Pagination} from 'swiper/modules';
 
 // Components
 import Filter from './Filter';

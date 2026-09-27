@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard, Pagination } from "swiper";
+import {Autoplay, Keyboard, Pagination} from "swiper/modules";
 
 //Component
 import LeftMenuModern from "../../Components/Header/LeftMenuModern";

@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 // Libraries
 import { Link } from "react-router-dom";
 import { Col, Container, Navbar, Row } from "react-bootstrap";
-import { Autoplay } from "swiper";
+import {Autoplay} from "swiper/modules";
 import * as Yup from 'yup';
 import { Formik, Form } from "formik";
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Col, Container, Navbar, Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Keyboard } from "swiper";
+import {Autoplay, EffectFade, Keyboard} from "swiper/modules";
 import { Link as ScrollTo } from "react-scroll"
 
 // Components

@@ -3,7 +3,7 @@ import React from 'react'
 // Libraries
 import { Row, Col, Container, Dropdown, Navbar } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard } from "swiper";
+import {Autoplay, Keyboard} from "swiper/modules";
 import { Link } from 'react-router-dom';
 import { m } from "framer-motion";
 

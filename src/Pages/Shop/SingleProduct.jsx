@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Form, Formik } from 'formik';
 import { m, AnimatePresence } from 'framer-motion';
-import { Navigation, Thumbs } from "swiper";
+import {Navigation, Thumbs} from "swiper/modules";
 import Lightbox from 'react-18-image-lightbox';
 
 // Components

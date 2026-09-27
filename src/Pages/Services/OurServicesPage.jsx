@@ -6,7 +6,7 @@ import { m } from "framer-motion";
 import { Link } from 'react-router-dom'
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Parallax } from 'react-scroll-parallax'
-import { Keyboard } from "swiper";
+import {Keyboard} from "swiper/modules";
 import { Link as ScrollTo } from "react-scroll"
 
 // Components

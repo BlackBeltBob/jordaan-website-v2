@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 // Libraries
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination, Keyboard } from "swiper";
+import {Autoplay, Navigation, Pagination, Keyboard} from "swiper/modules";
 import { PropTypes } from "prop-types";
 
 const Instagram02 = (props) => {

@@ -5,7 +5,7 @@ import { Col, Container, Navbar, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { m } from 'framer-motion';
-import { Autoplay, EffectFade, Keyboard } from "swiper";
+import {Autoplay, EffectFade, Keyboard} from "swiper/modules";
 
 // Components
 import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from '../../Components/Header/Header'

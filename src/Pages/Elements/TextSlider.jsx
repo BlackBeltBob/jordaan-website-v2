@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { m } from 'framer-motion'
-import { Autoplay, Keyboard } from "swiper";
+import {Autoplay, Keyboard} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Data

@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 // Libraries
 import { Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper";
+import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import { m } from "framer-motion"
 
 // Components

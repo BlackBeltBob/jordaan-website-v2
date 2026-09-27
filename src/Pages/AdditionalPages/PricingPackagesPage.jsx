@@ -2,7 +2,7 @@ import React from 'react'
 
 // Libraries
 import { Col, Container, Navbar, Row, Tab, Tabs } from 'react-bootstrap'
-import { Autoplay } from 'swiper';
+import {Autoplay} from 'swiper/modules';
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-scroll-parallax'
 import { Swiper, SwiperSlide } from "swiper/react";

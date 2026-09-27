@@ -2,7 +2,7 @@ import React, {lazy, useState} from 'react'
 
 // Libraries
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Autoplay, Pagination} from "swiper";
+import {Autoplay, Pagination} from "swiper/modules";
 import {Col, Container, Navbar, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {AnimatePresence, m} from 'framer-motion'

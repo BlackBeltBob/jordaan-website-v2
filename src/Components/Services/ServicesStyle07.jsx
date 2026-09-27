@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 // Libraries
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Keyboard, Navigation } from "swiper";
+import {Autoplay, Pagination, Keyboard, Navigation} from "swiper/modules";
 import { Col, Row } from 'react-bootstrap';
 import { PropTypes } from "prop-types";
 

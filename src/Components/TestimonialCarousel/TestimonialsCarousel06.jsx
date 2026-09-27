@@ -1,7 +1,7 @@
 import React, { useState, useRef, memo } from 'react'
 
 // Libraries
-import { Autoplay, Thumbs } from "swiper";
+import {Autoplay, Thumbs} from "swiper/modules";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PropTypes } from "prop-types";
 

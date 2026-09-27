@@ -5,7 +5,7 @@ import { Col } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { m } from "framer-motion";
 import { PropTypes } from "prop-types";
-import { Autoplay, Pagination } from "swiper";
+import {Autoplay, Pagination} from "swiper/modules";
 
 // Components
 import { fadeIn, fadeInLeft } from "../../Functions/GlobalAnimations";

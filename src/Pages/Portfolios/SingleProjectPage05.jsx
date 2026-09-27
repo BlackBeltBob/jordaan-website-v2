@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { m } from "framer-motion";
 import { Col, Container, Navbar, Row } from "react-bootstrap";
-import { Autoplay } from "swiper";
+import {Autoplay} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Components

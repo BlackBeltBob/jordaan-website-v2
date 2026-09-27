@@ -2,8 +2,7 @@ import React, { memo } from 'react'
 
 // Libraries
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination } from 'swiper'
-import { PropTypes } from "prop-types";
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';import { PropTypes } from "prop-types";
 import { Link } from 'react-router-dom'
 
 // Data

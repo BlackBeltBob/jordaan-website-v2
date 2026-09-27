@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
 import { m } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard } from "swiper";
+import {Autoplay, Keyboard} from "swiper/modules";
 
 // Components
 import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar, } from "../../Components/Header/Header";
