@@ -35,7 +35,7 @@ const IconWithText = lazy(() => import('../../Components/IconWithText/IconWithTe
 
 const RotateBoxData = [
   {
-    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/rugklachten.webp`,
+    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/rugklachten.jpeg`,
     title: "Rugklachten",
     subtitle: "Holistische benadering | 5 behandelingen",
     icon: "line-icon-Environmental-3",
@@ -44,7 +44,7 @@ const RotateBoxData = [
     content: "Houding- en bewegingsadvies ter genezing en preventie van rugklachten"
   },
   {
-    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/nekklachten.webp`,
+    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/nekklachten.jpeg`,
     title: "Nekklachten",
     subtitle: "Holistische benadering | 6 behandelingen",
     icon: "line-icon-Crown",
@@ -53,7 +53,7 @@ const RotateBoxData = [
     content: "Integrale, holistische aanpak van een veel voorkomende klacht."
   },
   {
-    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/slaaptraining.webp`,
+    img: `${process.env.PUBLIC_URL}/assets/img/webp/pakketten/slaaptraining.jpeg`,
     title: "Slaaptraining",
     subtitle: "4 behandelingen | online training",
     icon: "line-icon-Daylight",
